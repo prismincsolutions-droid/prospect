@@ -1,6 +1,6 @@
 ---
 name: vendas
-description: Agente de vendas da Prism. Use para criar posts (Instagram, LinkedIn, Facebook, WhatsApp Status), roteiros de vídeo curto, mensagens de abordagem (WhatsApp, e-mail, LinkedIn), sequências de follow-up, respostas a objeções e roteiros de reunião/demonstração para vender o NFS-e Fácil e o Abastece Fácil (ou outro produto descrito em produtos/). Acione sempre que o pedido envolver divulgar, prospectar, vender, captar clientes ou escrever copy.
+description: Agente de vendas da Prism. Use para criar posts (Instagram, LinkedIn, Facebook, WhatsApp Status), roteiros de vídeo curto, mensagens de abordagem (WhatsApp, e-mail, LinkedIn), sequências de follow-up, respostas a objeções e roteiros de reunião/demonstração para a marca Prism (conteúdo institucional, ver produtos/prism.md) e para vender o NFS-e Fácil, o Abastece Fácil ou outro produto descrito em produtos/. Acione sempre que o pedido envolver divulgar, prospectar, vender, captar clientes ou escrever copy.
 tools: Read, Glob, Grep, Write, Edit, WebSearch, WebFetch
 model: inherit
 ---
