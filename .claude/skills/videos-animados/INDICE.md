@@ -1,0 +1,716 @@
+# Índice de prompts
+
+Formato: `arquivo` — título · tecnologias · (parcial = prompt incompleto)
+
+## Motion graphics
+
+- `prompts/twoclipping-402193.md` — Opus 5.5 video by @twoclipping · svg
+- `prompts/moritzkremb-466494.md` — Opus 5.5 video by @moritzkremb · svg, gsap
+- `prompts/melvynx-638493.md` — Opus 5.5 video by @melvynx · canvas, svg, gsap
+- `prompts/ajith-io-208546.md` — Opus 5.5 video by @ajith_io · canvas, svg, gsap, css
+- `prompts/daniel-mac8-306214.md` — Opus 5.5 video by @daniel_mac8 · svg, gsap
+- `prompts/prasad-pilla-496049.md` — Opus 5.5 video by @prasad_pilla · svg, gsap
+- `prompts/itsolelehmann-762215.md` — Opus 5.5 video by @itsolelehmann · canvas
+- `prompts/ishaaqahamed-107563.md` — Opus 5.5 video by @Ishaaqahamed · canvas
+- `prompts/heyiammallik-293397.md` — Opus 5.5 video by @heyiammallik · threejs, canvas
+- `prompts/ann-nnng-852885.md` — Opus 5.5 video by @ann_nnng · canvas
+- `prompts/ajith-io-615243.md` — Opus 5.5 video by @ajith_io · canvas, particles
+- `prompts/0xfemyn-137833.md` — Opus 5.5 video by @0xfemyn · canvas, svg, css
+- `prompts/prasenx-693512.md` — Opus 5.5 video by @prasenx · shader, canvas, audio
+- `prompts/brainextends-606193.md` — Opus 5.5 video by @brainextends · shader, svg
+- `prompts/pankajkumar-dev-718609.md` — Opus 5.5 video by @pankajkumar_dev · canvas
+- `prompts/nolkeeg-635633.md` — Opus 5.5 video by @nolkeeg · canvas, particles
+- `prompts/1littlecoder-378066.md` — Opus 5.5 video by @1littlecoder · canvas
+- `prompts/ezshine-750731.md` — Opus 5.5 video by @ezshine · canvas, svg, gsap
+- `prompts/songkeys-384673.md` — Opus 5.5 video by @songkeys · canvas
+- `prompts/jackfriks-338762.md` — Opus 5.5 video by @jackfriks · canvas, svg, gsap
+- `prompts/sab8a-475686.md` — Opus 5.5 video by @sab8a · canvas, ai-image
+- `prompts/itisrazak-332386.md` — Opus 5.5 video by @itisRazak · threejs, canvas
+- `prompts/viktoroddy-402509.md` — Opus 5.5 video by @viktoroddy · canvas, svg, gsap, css
+- `prompts/kloss-xyz-941143.md` — Opus 5.5 video by @kloss_xyz · canvas, audio
+- `prompts/majidmanzarpour-927543.md` — Opus 5.5 video by @majidmanzarpour · canvas
+- `prompts/monokern-832979.md` — Opus 5.5 video by @monokern · shader, webgl, canvas
+- `prompts/zheke-622583.md` — Opus 5.5 video by @zheke · shader, webgl, canvas, particles
+- `prompts/demonugc-525162.md` — Opus 5.5 video by @demonugc · svg
+- `prompts/dale-vaz-879074.md` — Opus 5.5 video by @dale_vaz · canvas
+- `prompts/chatgptastra-807540.md` — Opus 5.5 video by @ChatGptAstra · canvas
+- `prompts/spearwtf-029058.md` — Opus 5.5 video by @SPEARwtf · threejs, canvas
+- `prompts/majorbaguette-834228.md` — Opus 5.5 video by @MajorBaguette · canvas
+- `prompts/miskinho-956105.md` — Opus 5.5 video by @miskinho_ · svg, gsap
+- `prompts/felipemoller-936736.md` — Opus 5.5 video by @felipemoller · threejs, svg, gsap
+- `prompts/ho-ba-761062.md` — Opus 5.5 video by @HO_BA · canvas
+- `prompts/howdevelop-733090.md` — Opus 5.5 video by @HowDevelop · canvas
+- `prompts/miaai-lab-774895.md` — Opus 5.5 video by @MiaAI_lab · shader, webgl, canvas
+- `prompts/gouthamjay8-910269.md` — Opus 5.5 video by @gouthamjay8 · svg, gsap
+- `prompts/marklaunches-041046.md` — Opus 5.5 video by @marklaunches · canvas, svg
+- `prompts/kmasiff-549880.md` — Opus 5.5 video by @KmAsiff · svg
+- `prompts/triglyceee-161719.md` — Opus 5.5 video by @TrigLyceee · svg, css
+- `prompts/mounnna-497266.md` — Opus 5.5 video by @Mounnna · canvas
+- `prompts/johnsavage-ai-427263.md` — Opus 5.5 video by @johnsavage_ai · threejs, shader, canvas
+- `prompts/rammanq-034553.md` — Opus 5.5 video by @rammanq · svg, gsap
+- `prompts/ratheejaisal-154698.md` — Opus 5.5 video by @RatheeJaisal · canvas, svg
+- `prompts/wani-shola-459278.md` — Opus 5.5 video by @wani_shola · svg, gsap
+- `prompts/robvjourney-237474.md` — Opus 5.5 video by @robvjourney · canvas, svg
+- `prompts/lester-tyy-480587.md` — Opus 5.5 video by @lester_tyy · svg
+- `prompts/sahilvermaai-189237.md` — Opus 5.5 video by @sahilvermaai · canvas
+- `prompts/pound75423-464968.md` — Opus 5.5 video by @pound75423 · canvas, css
+- `prompts/souravbhar871-477361.md` — Opus 5.5 video by @souravbhar871 · canvas
+- `prompts/gautam-mer1-530003.md` — Opus 5.5 video by @gautam_mer1 · canvas, svg, gsap · parcial
+- `prompts/doubleunplussed-181894.md` — Opus 5.5 video by @doubleunplussed · canvas
+- `prompts/bizibeast-505124.md` — Opus 5.5 video by @bizibeast · svg, gsap, css
+- `prompts/groundcontrol-230877.md` — Opus 5.5 video by @GroundControl · canvas, audio
+- `prompts/ceowinkz-683602.md` — Opus 5.5 video by @ceowinkz · canvas, svg
+- `prompts/xanderwow-a-597063.md` — Opus 5.5 video by @Xanderwow_A · canvas
+- `prompts/iammxfschr-955831.md` — Opus 5.5 video by @iamMXFSCHR · gsap
+- `prompts/sachaarbonel-673648.md` — Opus 5.5 video by @sachaarbonel · canvas, svg, gsap
+- `prompts/manuelogomigo-052364.md` — Opus 5.5 video by @manuelogomigo · canvas, svg
+- `prompts/chrisjdimarco-808196.md` — Opus 5.5 video by @chrisjdimarco · canvas
+- `prompts/dzhohola-249003.md` — Opus 5.5 video by @dzhohola · css
+- `prompts/madhav-xo-524440.md` — Opus 5.5 video by @Madhav_XO · threejs, shader, canvas
+- `prompts/jhylee95-452427.md` — Opus 5.5 video by @jhylee95 · svg, gsap
+- `prompts/astrodevil-392708.md` — Opus 5.5 video by @Astrodevil_ · canvas, svg, gsap
+- `prompts/hicallmechai-878304.md` — Opus 5.5 video by @hiCallMeChai · svg, gsap
+- `prompts/1littlecoder-914649.md` — Opus 5.5 video by @1littlecoder · canvas
+- `prompts/madebyjmayala-649220.md` — Opus 5.5 video by @madebyjmayala · canvas, svg
+- `prompts/annacher-433425.md` — Opus 5.5 video by @AnnaCher___ · svg
+- `prompts/slvdev-975986.md` — Opus 5.5 video by @slvDev · gsap
+- `prompts/gizakdag-239768.md` — Opus 5.5 video by @gizakdag · canvas
+- `prompts/nummanali-340931.md` — Opus 5.5 video by @nummanali · canvas
+- `prompts/advait-jayant-712107.md` — Opus 5.5 video by @advait_jayant · canvas
+- `prompts/abhinayguptha-259981.md` — Opus 5.5 video by @abhinayguptha · shader, webgl, canvas
+- `prompts/reflex-cloud-304046.md` — Opus 5.5 video by @reflex_cloud · shader, webgl, canvas, css
+- `prompts/macrohou-733862.md` — Opus 5.5 video by @macrohou · canvas, audio
+- `prompts/samuel-spitz-503053.md` — Opus 5.5 video by @samuel_spitz · threejs, shader, canvas
+- `prompts/stewchan2-369810.md` — Opus 5.5 video by @stewchan2 · canvas
+- `prompts/ghinaiya-nirmal-308943.md` — Opus 5.5 video by @ghinaiya_nirmal · canvas
+- `prompts/l3d1c-752011.md` — Opus 5.5 video by @l3d1c · canvas, svg
+- `prompts/cansincengiz-me-424245.md` — Opus 5.5 video by @cansincengiz_me · threejs, canvas
+- `prompts/kikelopezdesign-173471.md` — Opus 5.5 video by @kikelopezdesign · canvas
+- `prompts/thegrootdev-966114.md` — Opus 5.5 video by @TheGrootDev · svg
+- `prompts/charliie-334026.md` — Opus 5.5 video by @charliie · svg, css · parcial
+- `prompts/samaote-124569.md` — Opus 5.5 video by @samaote · shader, canvas, svg
+- `prompts/leanzubrezki-766171.md` — Opus 5.5 video by @LeanZubrezki · svg, gsap
+- `prompts/onewaysidewalks-440008.md` — Opus 5.5 video by @onewaysidewalks · threejs, canvas, svg, css
+- `prompts/andginja-618685.md` — Opus 5.5 video by @andginja · canvas, svg, css
+- `prompts/anas0ra-952637.md` — Opus 5.5 video by @anas0ra · threejs, canvas
+- `prompts/nezbuilds-294391.md` — Opus 5.5 video by @nezbuilds · svg
+- `prompts/xelandre-687413.md` — Opus 5.5 video by @xelandre__ · canvas, svg
+- `prompts/techyoutbe-588678.md` — Opus 5.5 video by @techyoutbe · svg
+- `prompts/sudo-kiran-696074.md` — Opus 5.5 video by @sudo_kiran · canvas
+- `prompts/fire-ozgur-130104.md` — Opus 5.5 video by @fire_ozgur · canvas
+- `prompts/iamtanzil-120030.md` — Opus 5.5 video by @iamtanzil_ · canvas, css
+- `prompts/gdgtify-929495.md` — Opus 5.5 video by @Gdgtify · canvas
+- `prompts/sanjeevn72-457691.md` — Opus 5.5 video by @sanjeevn72 · svg
+- `prompts/madpencil-753990.md` — Opus 5.5 video by @madpencil_ · svg
+- `prompts/loicrambo-980558.md` — Opus 5.5 video by @loicRambo · canvas
+- `prompts/hugon001-609629.md` — Opus 5.5 video by @hugon001 · canvas
+- `prompts/mehul4795-417532.md` — Opus 5.5 video by @mehul4795 · svg
+- `prompts/techhalla-498547.md` — Opus 5.5 video by @techhalla · canvas
+- `prompts/ai-baymax-416787.md` — Opus 5.5 video by @Ai_Baymax · gsap
+- `prompts/mtvneo-148436.md` — Opus 5.5 video by @mtvneo_ · threejs, canvas, svg
+- `prompts/rneayan-406275.md` — Opus 5.5 video by @rneayan · canvas
+- `prompts/rneayan-441493.md` — Opus 5.5 video by @rneayan · canvas, svg, gsap, css
+- `prompts/hoyoyoda-543147.md` — Opus 5.5 video by @hoyoyoda · canvas, pixel
+- `prompts/faroukzy-138551.md` — Opus 5.5 video by @faroukzy · canvas
+- `prompts/hsanat-012699.md` — Opus 5.5 video by @hSanat · svg, gsap
+- `prompts/davidshulmanfl-842921.md` — Opus 5.5 video by @DavidShulmanFL · threejs, canvas, audio
+- `prompts/drrickio-009558.md` — Opus 5.5 video by @drrickio · svg, gsap
+- `prompts/andre-lucaxxs-846347.md` — Opus 5.5 video by @andre_lucaxxs · canvas, svg, gsap
+- `prompts/davidmarcus-686217.md` — Opus 5.5 video by @davidmarcus · svg, gsap
+- `prompts/supremebeme-306746.md` — Opus 5.5 video by @supremebeme · svg
+- `prompts/vahidf24-121886.md` — Opus 5.5 video by @vahidf24 · svg, gsap, css
+- `prompts/ishuagra02-922825.md` — Opus 5.5 video by @ishuagra02 · canvas
+- `prompts/jake11moran-414633.md` — Opus 5.5 video by @jake11moran · canvas, svg, gsap, ai-image
+- `prompts/chrisjdimarco-524106.md` — Opus 5.5 video by @chrisjdimarco · canvas, particles, physics
+- `prompts/andriyfernandes-807308.md` — Opus 5.5 video by @andriyfernandes · canvas, audio
+- `prompts/techtactician-144474.md` — Opus 5.5 video by @techtactician · svg, gsap, css
+- `prompts/0xevinho-436195.md` — Opus 5.5 video by @0xEvinho · canvas, particles, pixel
+- `prompts/justincooperman-188876.md` — Opus 5.5 video by @justincooperman · canvas, css
+- `prompts/rames-jusso-776559.md` — Opus 5.5 video by @Rames_Jusso · canvas
+- `prompts/mycodecoach-459574.md` — Opus 5.5 video by @MyCodeCoach · threejs, svg
+- `prompts/pbteja1998-651644.md` — Opus 5.5 video by @pbteja1998 · svg, gsap, css
+- `prompts/anjmaxx-459455.md` — Opus 5.5 video by @anjmaxx · canvas, pixel
+- `prompts/kantamk-176511.md` — Opus 5.5 video by @kantamk · canvas, physics, audio
+- `prompts/mattbean-917572.md` — Opus 5.5 video by @mattbean · canvas
+- `prompts/suryarajendhran-730437.md` — Opus 5.5 video by @SuryaRajendhran · canvas
+- `prompts/maxalexweber-459784.md` — Opus 5.5 video by @maxalexweber · canvas, svg
+- `prompts/eric-khun-667455.md` — Opus 5.5 video by @eric_khun · canvas
+- `prompts/micheleharmonic-244175.md` — Opus 5.5 video by @MicheleHarmonic · canvas
+- `prompts/abderrahmen-g-899031.md` — Opus 5.5 video by @abderrahmen_g · canvas, svg, gsap, css
+- `prompts/lepadev-475414.md` — Opus 5.5 video by @lepadev · svg, gsap
+- `prompts/modaalbuilder-868989.md` — Opus 5.5 video by @modaalbuilder · canvas, css · parcial
+- `prompts/jrayon-054015.md` — Opus 5.5 video by @jrayon · shader, webgl, canvas
+- `prompts/ehsanik-162993.md` — Opus 5.5 video by @ehsanik · canvas
+- `prompts/fornyapayzeka-795431.md` — Opus 5.5 video by @FornYapayZeka · threejs, shader, particles
+- `prompts/kamstudiolabs-440893.md` — Opus 5.5 video by @KamStudioLabs · canvas, physics, audio
+- `prompts/gonzalomacagno-344202.md` — Opus 5.5 video by @GonzaloMacagno · svg, css
+- `prompts/kamstudiolabs-877996.md` — Opus 5.5 video by @KamStudioLabs · canvas, particles
+- `prompts/zeezomb-726206.md` — Opus 5.5 video by @zeezomb · threejs, shader
+- `prompts/kamstudiolabs-100086.md` — Opus 5.5 video by @KamStudioLabs · canvas, audio
+- `prompts/palashbagchi11-389221.md` — Opus 5.5 video by @PalashBagchi11 · canvas · parcial
+- `prompts/nemtudo-614053.md` — Opus 5.5 video by @NemTudo_ · svg, audio
+- `prompts/fornyapayzeka-135914.md` — Opus 5.5 video by @FornYapayZeka · threejs, shader
+- `prompts/ercankeskinx-897906.md` — Opus 5.5 video by @ercankeskinx · canvas, svg
+- `prompts/x4b47x-034026.md` — Opus 5.5 video by @x4b47x · canvas, particles, audio
+- `prompts/zhang-baoqing-920413.md` — Opus 5.5 video by @zhang_baoqing · threejs, canvas, particles · parcial
+- `prompts/sciencedegens-843325.md` — Opus 5.5 video by @sciencedegens · threejs, shader, canvas · parcial
+- `prompts/washow-cfo-175311.md` — Opus 5.5 video by @washow_cfo · canvas, svg · parcial
+- `prompts/joao-felixl-809438.md` — Opus 5.5 video by @joao_felixl · svg, gsap · parcial
+- `prompts/vince-builds-355650.md` — Opus 5.5 video by @vince_builds · css · parcial
+- `prompts/ik-builds-585923.md` — Opus 5.5 video by @ik_builds · canvas, svg · parcial
+- `prompts/petert-350098.md` — Opus 5.5 video by @_petert · threejs, canvas, svg, css · parcial
+- `prompts/georgejimenez98-431559.md` — Opus 5.5 video by @georgejimenez98 · gsap, css · parcial
+- `prompts/majin-appsheet-693327.md` — Opus 5.5 video by @Majin_AppSheet · canvas, svg · parcial
+- `prompts/javi-llofriu-059888.md` — Opus 5.5 video by @Javi_llofriu · svg, css · parcial
+- `prompts/georgejimenez98-427173.md` — Opus 5.5 video by @georgejimenez98 · svg, css · parcial
+- `prompts/l3d1c-632524.md` — Opus 5.5 video by @l3d1c · svg · parcial
+- `prompts/wustep-884086.md` — Opus 5.5 video by @wustep · svg · parcial
+- `prompts/apoorvjain25-309680.md` — Opus 5.5 video by @apoorvjain25 · svg · parcial
+- `prompts/pranavclickks-254816.md` — Opus 5.5 video by @pranavclickks · gsap, css · parcial
+- `prompts/zakisbuilding-495680.md` — Opus 5.5 video by @zakisbuilding · canvas · parcial
+- `prompts/aschapmann-724497.md` — Opus 5.5 video by @aschapmann · svg, gsap, css · parcial
+- `prompts/dannyverkissen-101463.md` — Opus 5.5 video by @DannyVerkissen · css · parcial
+- `prompts/chapi13-131449.md` — Opus 5.5 video by @chapi13 · svg, css · parcial
+- `prompts/qinelke-271655.md` — Opus 5.5 video by @QinElke · svg, gsap, css · parcial
+- `prompts/genelab-999-088672.md` — Opus 5.5 video by @geneLab_999 · canvas, svg · parcial
+- `prompts/inoue-aix-234322.md` — Opus 5.5 video by @inoue_aix · svg · parcial
+- `prompts/daniel-haida-636937.md` — Opus 5.5 video by @daniel_haida · canvas, svg, css · parcial
+- `prompts/pisajeski-168993.md` — Opus 5.5 video by @PIsajeski · canvas, css · parcial
+- `prompts/dustindavis-644806.md` — Opus 5.5 video by @DustinDavis · canvas, svg, gsap, css · parcial
+- `prompts/signalz-jp-918002.md` — Opus 5.5 video by @signalz_jp · svg · parcial
+- `prompts/djadkison-394122.md` — Opus 5.5 video by @DJAdkison · canvas, svg · parcial
+- `prompts/mousszy-baby-014197.md` — Opus 5.5 video by @mousszy_baby · canvas · parcial
+- `prompts/fr-sorrentino-871017.md` — Opus 5.5 video by @Fr_Sorrentino · canvas, svg, gsap · parcial
+- `prompts/proanaliteg-458642.md` — Opus 5.5 video by @proanaliteg · svg · parcial
+- `prompts/kingokings-992769.md` — Opus 5.5 video by @KingOKings · canvas, svg, css · parcial
+- `prompts/dys-hay-749645.md` — Opus 5.5 video by @Dys_hay · canvas, svg · parcial
+- `prompts/heymrzak-349060.md` — Opus 5.5 video by @heymrzak · svg, gsap · parcial
+- `prompts/ambiguous-ai-505873.md` — Opus 5.5 video by @ambiguous_ai · shader, canvas · parcial
+- `prompts/lnkiai-544254.md` — Opus 5.5 video by @lnkiai · threejs, svg, gsap, css · parcial
+- `prompts/tejasthange3-128242.md` — Opus 5.5 video by @TejasThange3 · canvas, svg, css · parcial
+- `prompts/helloshiva0801-438284.md` — Opus 5.5 video by @helloshiva0801 · canvas, svg, css · parcial
+- `prompts/als-link-301108.md` — Opus 5.5 video by @als_link · canvas, svg · parcial
+- `prompts/piyushaaryan2-196586.md` — Opus 5.5 video by @PiyushAaryan2 · canvas, svg · parcial
+- `prompts/thuggy-juice-072370.md` — Opus 5.5 video by @Thuggy_Juice · svg, gsap · parcial
+- `prompts/iammukeshm-421585.md` — Opus 5.5 video by @iammukeshm · canvas, svg, css · parcial
+- `prompts/yarhmm-341449.md` — Opus 5.5 video by @YarHmm · svg · parcial
+- `prompts/t4k1ra-cg-110846.md` — Opus 5.5 video by @T4K1RA_CG · canvas, svg · parcial
+- `prompts/francoxavier33-341663.md` — Opus 5.5 video by @francoxavier33 · svg, gsap · parcial
+- `prompts/thallisribeiro-829318.md` — Opus 5.5 video by @thallisribeiro · canvas, svg · parcial
+- `prompts/tycenjm-098014.md` — Opus 5.5 video by @tycenjm · canvas, svg · parcial
+- `prompts/iamshankhadeep-506266.md` — Opus 5.5 video by @Iamshankhadeep · svg · parcial
+- `prompts/safaelmali-004843.md` — Opus 5.5 video by @SafaElmali · threejs, svg, gsap · parcial
+- `prompts/localjulius-625706.md` — Opus 5.5 video by @localjulius · svg · parcial
+- `prompts/alanschwegler-629665.md` — Opus 5.5 video by @alanschwegler · svg · parcial
+- `prompts/seantiffonnet-675262.md` — Opus 5.5 video by @SeanTiffonnet · gsap · parcial
+- `prompts/priyansh0327-206409.md` — Opus 5.5 video by @priyansh0327 · canvas, svg, gsap · parcial
+- `prompts/goldiez2599-685869.md` — Opus 5.5 video by @Goldiez2599 · css · parcial
+- `prompts/bridgemindai-286423.md` — Opus 5.5 video by @bridgemindai · svg, gsap, css · parcial
+- `prompts/dheepanratnam-706454.md` — Opus 5.5 video by @Dheepanratnam · svg, gsap · parcial
+- `prompts/soumymaheshwri-825921.md` — Opus 5.5 video by @Soumymaheshwri · css · parcial
+- `prompts/tankazunori0914-156748.md` — Opus 5.5 video by @tankazunori0914 · canvas · parcial
+- `prompts/leandroriviello-827135.md` — Opus 5.5 video by @leandroriviello · svg, gsap · parcial
+- `prompts/maxhirsch13-600983.md` — Opus 5.5 video by @MaxHirsch13 · svg, gsap · parcial
+- `prompts/saadpastadev-347341.md` — Opus 5.5 video by @SaadPastaDev · svg, gsap, css · parcial
+- `prompts/envoldev-017555.md` — Opus 5.5 video by @EnvolDev · canvas, svg, gsap, css · parcial
+- `prompts/dengent-412996.md` — Opus 5.5 video by @DengenT · threejs, svg · parcial
+- `prompts/apoorvjain25-150112.md` — Opus 5.5 video by @apoorvjain25 · canvas, svg, gsap · parcial
+- `prompts/smitjaineditor-843957.md` — Opus 5.5 video by @SmitJainEditor · svg, gsap · parcial
+- `prompts/leowenai-125931.md` — Opus 5.5 video by @LeowenAI · shader, canvas, svg · parcial
+- `prompts/humzaakhalid-537875.md` — Opus 5.5 video by @humzaakhalid · canvas · parcial
+- `prompts/xenit-v0-532873.md` — Opus 5.5 video by @xenit_v0 · gsap, css · parcial
+- `prompts/sonali-sahu-09-350200.md` — Opus 5.5 video by @Sonali_Sahu_09 · svg, gsap, css · parcial
+- `prompts/seri-nonnon-231813.md` — Opus 5.5 video by @seri_nonnon · svg, gsap · parcial
+- `prompts/0xrapzz-433554.md` — Opus 5.5 video by @0xRapzz · canvas, svg, gsap · parcial
+- `prompts/rishit30g-568278.md` — Opus 5.5 video by @rishit30g · svg · parcial
+- `prompts/alex-leiro-867087.md` — Opus 5.5 video by @Alex_Leiro · css · parcial
+- `prompts/asei-ikarashi-437835.md` — Opus 5.5 video by @asei_ikarashi · canvas, svg, gsap · parcial
+- `prompts/nehalmax-802479.md` — Opus 5.5 video by @nehalmax · canvas, svg, gsap, css · parcial
+- `prompts/colecornelll-047465.md` — Opus 5.5 video by @colecornelll · threejs, canvas · parcial
+- `prompts/allodev-069765.md` — Opus 5.5 video by @allodev · svg · parcial
+- `prompts/saxxyweb3-690124.md` — Opus 5.5 video by @saxxyweb3 · canvas, svg, gsap · parcial
+- `prompts/ayumi-t820-871023.md` — Opus 5.5 video by @ayumi_t820 · svg, gsap · parcial
+- `prompts/heyiamnick-119558.md` — Opus 5.5 video by @heyiamnick · canvas
+- `prompts/thesethian-384517.md` — Opus 5.5 video by @theSethian · threejs, shader
+- `prompts/adrianduta96-992248.md` — Motion Graphics Music Machine · 
+- `prompts/airobertdaily-416945.md` — Apple Evolution Motion Graphics · 
+- `prompts/n01ennn-597182.md` — Claude Motion: Opus 5.5 Animated Story · 
+- `prompts/utsavchopra30-560359.md` — Opus 5.5 Brand Teaser · 
+- `prompts/0xkarmi-129839.md` — Deterministic Frame-Based Video Rendering · 
+- `prompts/screeendev-981790.md` — SaaS Launch Video Animation · 
+- `prompts/flxrnc-251921.md` — UI Motion Loop Design · 
+- `prompts/0xverdao-776363.md` — Minecraft Street View Animation · 
+- `prompts/khlaseek-dsgner-877659.md` — Widget Animation Motion Design · 
+- `prompts/kewai386772-262769.md` — Nobel prize science · 
+- `prompts/cgclick-497325.md` — Motion Graphics Search Bar Animation · 
+- `prompts/federicoaltepo1-312496.md` — Product Promo Video Generation · 
+- `prompts/ilyapion-072443.md` — Business Promo · 
+- `prompts/tkz-aiart-864352.md` — Track Card Video Prompt for Opus 5.5 · 
+- `prompts/thegreatola-738411.md` — Opus 5.5 Product Demo · 
+- `prompts/thegawdstiles-738178.md` — Code-Built Brand Promo Motion Graphics · 
+- `prompts/jiro-aicompany-487818.md` — Short Video Instruction Template · 
+- `prompts/0xnicc0-516612.md` — Product Launch Motion Film · 
+- `prompts/elitzavasileva-591465.md` — Opus 5.5 Cinematic Product Promo · 
+- `prompts/aidinzeo-708182.md` — Mandelbrot Fractal Zoom Animation · 
+- `prompts/yatudou14-822057.md` — Obsidian Plugin Promo Animation · 
+- `prompts/ligayabeebe-323995.md` — Code-Drawn Product Launch Video · 
+- `prompts/pluvio9yte-662953.md` — Particle Effect Video Workflow · 
+- `prompts/gdgtify-393073.md` — Euclid's Proof Kinetic Typography · 
+- `prompts/mouri45-575311.md` — Meta VR Glasses Promo Variations · 
+- `prompts/financeyf5-462150.md` — Beat-Synced Music · 
+- `prompts/claudecode-ut-314769.md` — 2ch Style Video Creation · 
+- `prompts/uinerd-635877.md` — Oktoberfest Character Animation · 
+- `prompts/yanivm79-158103.md` — Opus 5.5 Remotion · 
+- `prompts/thewevr-681887.md` — Code-Generated Music Video Animation · 
+- `prompts/leo114119-936422.md` — Clawd Moves In Fan-Film Recreation · 
+- `prompts/elkrispis-872980.md` — Product Launch Video Creation Workflow · 
+- `prompts/shengtang135754-900065.md` — Opus 5.5 Remotion Product Promo Video · 
+- `prompts/kaiyu-ai-762929.md` — Spider's Thread motion comic · 
+- `prompts/paripune-657175.md` — Faith Short Film Animation · 
+- `prompts/flxrnc-619627.md` — Opus 5.5 Cat Movie Animation · 
+- `prompts/ponzponz15-145882.md` — Motion Graphic from LP Image with Opus 5.5 · 
+- `prompts/twoclipping-551116.md` — Launch Trailer Video Generation · 
+- `prompts/aimevzulari-256293.md` — Galileo Brachistochrone Animation · 
+- `prompts/testlandblog-617500.md` — Steam Engine Explanation · 
+- `prompts/minochan0824-827805.md` — Motion Graphics Product Launch Video · 
+- `prompts/twoclipping-747965.md` — Nightshift Product Launch Video · 
+- `prompts/qianqiongge-246969.md` — Remotion Product Demo · 
+- `prompts/renmu2017-477264.md` — Create Future-Themed Video Animation with Sound Effects and Music · 
+- `prompts/wozu-co-893062.md` — Simple Motion Design Launch · 
+- `prompts/johncodunayo-560372.md` — AE MCP Motion Graphics Prompts · 
+- `prompts/q970270495-497923.md` — Startup Promo Video · 
+- `prompts/x7mdnet-157811.md` — Vox-Style Video Generation with Motion Library · 
+- `prompts/notdwd-766641.md` — 12-Second Code-Based Launch Animation · 
+- `prompts/deebeeeff-234301.md` — Anniversary Celebration · 
+- `prompts/ai9app-989009.md` — Code-Generated Motion Design Showreel · 
+- `prompts/sportyblocks-320796.md` — SportyBlocks Launch Video · 
+- `prompts/abhinavflac-251740.md` — Manga Traced Music Video · 
+- `prompts/humzaakhalid-011081.md` — Premium Motion Graphics Brand Film · 
+- `prompts/byaiden-vu-755862.md` — Opus 5.5 Battery Stickman Loop Animation · 
+- `prompts/dhanrajdc-602284.md` — Handbook Video Creation · 
+- `prompts/vignesh-rav-417649.md` — Opus 5.5 Launch Film Code · 
+- `prompts/hahazwei-425483.md` — Perler Bead Pixel Style MV · 
+- `prompts/jamee-now-583635.md` — His Tanghulu Paper Puppet Story · 
+- `prompts/lemcosmos-535145.md` — X Profile Show Reel HTML Animation · 
+- `prompts/lalulu-create-091362.md` — Dalí Generative AI Animation · 
+- `prompts/oliahmed205-069378.md` — Product Promotional · 
+- `prompts/cipherwrk-451155.md` — Premium Product Animation · 
+- `prompts/dotey-773568.md` — Manus Alchemy Motion Design Showreel · 
+- `prompts/jayscambler-495095.md` — FundMyCompute Platform Overview Video · 
+- `prompts/thinkszyg-886066.md` — Huawei Phone Ad Prompt Skeleton · 
+- `prompts/deeprajo1-623150.md` — High-end Motion Graphics Launch · 
+- `prompts/niebin-gg-621849.md` — Opus 5.5 UI Motion Loop · 
+- `prompts/paulo-kombucha-283883.md` — Referral Program Motion Graphics · 
+- `prompts/punit-io-584518.md` — Remotion Product Launch Film Code · 
+- `prompts/oxpsats-182908.md` — Canvas Video with Web Audio Synthesis · 
+- `prompts/thilina-a-915273.md` — Product Update Motion Graphics · 
+- `prompts/listudio-023803.md` — Product Release · 
+- `prompts/roundtablespace-232366.md` — Max Effort Motion Design Showreel · 
+- `prompts/yanliudesign-839698.md` — Seattle Motion Graphics Video by Opus 5.5 · 
+- `prompts/riverroadlabs-269620.md` — Weather Gnome App Promo by Opus 5.5 · 
+- `prompts/rohanpaul-ai-500542.md` — Paul Graham Essay Video with Opus 5.5 · 
+- `prompts/johnmckeownn-511049.md` — Founder-voiced AI agent comedy clip skill · 
+- `prompts/arjunsh1607-922126.md` — Pixel Up Labs Showreel · 
+- `prompts/ryan-morr-666741.md` — Hoplite Feature Launch · 
+- `prompts/henkpoley-761980.md` — Terrible Motion Designer Showreel Animation · 
+- `prompts/diamai-157697.md` — 30-Second Motion Design Video in Code · 
+- `prompts/godsboy7777-005594.md` — Pelican Looping SVG Animation Comparison · 
+- `prompts/thejohnnyhuy-282154.md` — Apple Keynote Launch Film HTML · 
+- `prompts/topi-003-659728.md` — Opus 5.5 Dynamic Dance · 
+- `prompts/bitcoinrui-812752.md` — Voice Input Product Promo Animation · 
+- `prompts/nonbiri-ai-110674.md` — Motion Graphic Showreel · 
+- `prompts/curieuxexplorer-408141.md` — Microscope Zoom Animation · 
+- `prompts/subraiz24-994209.md` — Perceptron Release Reel · 
+- `prompts/topi-003-055288.md` — Opus 5.5 Dance Video from Image · 
+- `prompts/bogdandragomir-412658.md` — Animated Intro with Synced Music · 
+- `prompts/tstfully-680192.md` — YouTube Transcript Ad Motion · 
+- `prompts/notdwd-998633.md` — Brand Film Prompt Structure · 
+- `prompts/iliareingold-486492.md` — Prometheus story animation · 
+- `prompts/charumitradubey-328233.md` — SuperLaunch Brand Motion Video · 
+- `prompts/teleboost-app-521507.md` — Opus 5.5 Promo Video Animation · 
+- `prompts/fractadev-861266.md` — SaaS Product Launch Motion Graphics · 
+- `prompts/aichrislee-961335.md` — Opus 5.5 Motion Graphics Showreel · 
+- `prompts/kingokings-835071.md` — Reactive Resume Motion Graphics Showreel · 
+- `prompts/sdinesh91-159008.md` — Professional SaaS Product Launch Video · 
+- `prompts/tanabe-fragm-706979.md` — Claude Self-Introduction Motion Graphics · 
+- `prompts/egawa-ai-design-092323.md` — Barber Shop Recruitment Motion Graphics Video · 
+- `prompts/zhu185178-255661.md` — Rain Station Animated Short · 
+- `prompts/jazzen-chen-894989.md` — AgentHud Project Animation · 
+- `prompts/zigapoto-942208.md` — Agentic Analytics Startup · 
+- `prompts/kurahu-capten-054506.md` — Evangelion Style Lyric Video · 
+- `prompts/yuyudora622-858156.md` — Dynamic Self-Introduction Motion Graphics · 
+- `prompts/yama-kiyo-134910.md` — Psychedelic Motion Graphics · 
+- `prompts/wangyinrec-532344.md` — Renaissance Naturalist Manuscript Style Video · 
+- `prompts/mileson07-065690.md` — Cheese Camera Concept Animation · 
+- `prompts/aydenspringer23-227772.md` — Logo-Based Motion Graphics · 
+- `prompts/tdinh-me-301409.md` — TypingMind Logo Reveal Motion Design · 
+- `prompts/aiaircle34052-950750.md` — One-Sentence Prompt for 15s Motion Graphics · 
+- `prompts/quickdesignio-338399.md` — QuickDesign Brand · 
+- `prompts/0xvalure-354245.md` — PayBox Logo Motion Design · 
+- `prompts/okapi-fukugyo-166351.md` — UI Motion Design Animation · 
+- `prompts/annacher-152174.md` — Product Promo UI Motion · 
+- `prompts/nischalsharma-587738.md` — Glass Mosaic Animated Film · 
+- `prompts/kisalay-921896.md` — Motion Design Showreel from Song · 
+- `prompts/rebutonepress-688099.md` — Time Story · 
+- `prompts/hakimieiqbal-762926.md` — Purpose of Life Animation · 
+- `prompts/jasondainter-028222.md` — AI Wars Stick Figure Video · 
+- `prompts/drishtantk-356656.md` — Orbital Lounge Lofi Stream Loop · 
+- `prompts/tonka1981jp-288376.md` — Brain Death Animation Prompt for Opus 5.5 · 
+- `prompts/fumiyamizuguchi-500632.md` — Dynamic Product Showreel · 
+- `prompts/enhanced-jp-776726.md` — Dynamic Motion Graphics Showreel · 
+- `prompts/aiwarts-428866.md` — Remotion and Python Tech Stack for Video Generation · 
+- `prompts/aiwarts-815008.md` — Website Promo Video with Remotion and Python Music · 
+- `prompts/mtvneo-819281.md` — Opus 5.5 Self-Personification Motion Graphics · 
+- `prompts/dimoff2000-260969.md` — Easy-Peasy AI Launch · 
+- `prompts/daverogenmoser-899271.md` — Mackenzie Club Fox Chase Hype · 
+- `prompts/julianpscheid-494027.md` — Hedy SaaS Launch · 
+- `prompts/pradeepxkapoor-641956.md` — Sumi-e Ink Film · 
+- `prompts/thallisribeiro-750805.md` — Product Video Generation · 
+- `prompts/1234lust-671954.md` — Moose in Code Editor Film · 
+- `prompts/superalesha-970412.md` — Hedgehog in the Fog Animated Short · 
+- `prompts/perezalexa23-414045.md` — Trojan Horse Ancient Greek Vase Animation · 
+- `prompts/meetarno-782464.md` — X Vision Brand Promo · 
+- `prompts/fanfulladev-063524.md` — Pokemon Intro Animation with AI Mascots · 
+
+## Explicativos
+
+- `prompts/ror-fly-880547.md` — Opus 5.5 video by @Ror_Fly · canvas
+- `prompts/deedydas-252537.md` — Opus 5.5 video by @deedydas · svg, gsap
+- `prompts/sudo-kiran-335993.md` — Opus 5.5 video by @sudo_kiran · canvas, svg, gsap, css
+- `prompts/0xvalure-331584.md` — Opus 5.5 video by @0xValure · threejs, canvas
+- `prompts/verbove-268381.md` — Opus 5.5 video by @verbove · canvas
+- `prompts/ajith-io-562538.md` — Opus 5.5 video by @ajith_io · threejs, shader, canvas
+- `prompts/linearuncle-971663.md` — Opus 5.5 video by @LinearUncle · svg, audio
+- `prompts/alex-prompter-997524.md` — Opus 5.5 video by @alex_prompter · svg, gsap
+- `prompts/emollick-019567.md` — Opus 5.5 video by @emollick · canvas
+- `prompts/kloss-xyz-067876.md` — Opus 5.5 video by @kloss_xyz · canvas, svg, css
+- `prompts/henkvaness-975279.md` — Opus 5.5 video by @henkvaness · svg
+- `prompts/amitsingha89-780553.md` — Opus 5.5 video by @AmitSingha89 · svg
+- `prompts/tak3sh8-441895.md` — Opus 5.5 video by @tak3sh8 · canvas, audio
+- `prompts/astrothewizard-618782.md` — Opus 5.5 video by @AstroTheWizard · canvas
+- `prompts/sudo-kiran-254201.md` — Opus 5.5 video by @sudo_kiran · canvas, svg, css
+- `prompts/sarut0bisasuke-069973.md` — Opus 5.5 video by @Sarut0biSasuke · canvas
+- `prompts/tomandrieu96707-875264.md` — Opus 5.5 video by @TomAndrieu96707 · canvas, svg, gsap
+- `prompts/0xnfrith-068999.md` — Opus 5.5 video by @0xnfrith · svg, gsap
+- `prompts/1stnoel-603851.md` — Opus 5.5 video by @1stnoel_ · gsap
+- `prompts/retropunkai-277590.md` — Opus 5.5 video by @RetropunkAI · canvas, svg, gsap, ai-image
+- `prompts/parkerrex-701462.md` — Opus 5.5 video by @ParkerRex · canvas, physics
+- `prompts/charlesmendez-476517.md` — Opus 5.5 video by @charlesmendez · canvas, svg, gsap
+- `prompts/nikolajankovic-616097.md` — Opus 5.5 video by @_nikolajankovic · canvas
+- `prompts/0xlangeai-178533.md` — Opus 5.5 video by @0xlangeai · svg, css · parcial
+- `prompts/stephanferraro-224281.md` — Opus 5.5 video by @StephanFerraro · threejs, shader, physics · parcial
+- `prompts/chudry223-081860.md` — Opus 5.5 video by @chudry223 · threejs, shader · parcial
+- `prompts/voxyz-ai-345550.md` — Opus 5.5 video by @Voxyz_ai · threejs, shader, canvas, gsap · parcial
+- `prompts/explorations-iq-921682.md` — Opus 5.5 video by @explorations_iq · threejs, shader, canvas · parcial
+- `prompts/nybobs-680050.md` — Opus 5.5 video by @nybobs · threejs, canvas · parcial
+- `prompts/garmdotcom-987439.md` — Opus 5.5 video by @garmdotcom · canvas, svg · parcial
+- `prompts/cyrilxbt-149036.md` — Opus 5.5 video by @cyrilXBT · canvas, physics · parcial
+- `prompts/miguel07code-091611.md` — Opus 5.5 video by @Miguel07Code · canvas, audio, ai-image · parcial
+- `prompts/kureshirfan-386691.md` — Opus 5.5 video by @kureshirfan · svg · parcial
+- `prompts/amberpromptai-345137.md` — Opus 5.5 video by @AmberPromptai · canvas · parcial
+- `prompts/iniyanai-856596.md` — Opus 5.5 video by @iniyanai · threejs, svg, audio · parcial
+- `prompts/acoramaa-053577.md` — Opus 5.5 video by @Acoramaa · threejs, shader · parcial
+- `prompts/kgonia7-746268.md` — Opus 5.5 video by @kgonia7 · threejs, shader, canvas, particles · parcial
+- `prompts/nathanwilbanks-981110.md` — Opus 5.5 video by @NathanWilbanks_ · threejs, shader, audio · parcial
+- `prompts/hunzai-842605.md` — Opus 5.5 video by @hunzai · canvas, audio · parcial
+- `prompts/konstantinsaifo-501736.md` — Opus 5.5 video by @konstantinsaifo · threejs, shader · parcial
+- `prompts/rakhsh-tech-544921.md` — Opus 5.5 video by @Rakhsh_Tech · canvas, audio · parcial
+- `prompts/arthurkatcher-604161.md` — Opus 5.5 video by @arthurkatcher · svg, gsap, audio · parcial
+- `prompts/moguzbulbul-215591.md` — Opus 5.5 video by @moguzbulbul · svg, gsap, css · parcial
+- `prompts/irinatoxi-962937.md` — Opus 5.5 video by @irinatoxi · threejs, shader, canvas · parcial
+- `prompts/konstantinsaifo-587629.md` — Opus 5.5 video by @konstantinsaifo · threejs, shader · parcial
+- `prompts/stefanostraus-971191.md` — Opus 5.5 video by @StefanoStraus · threejs, shader, canvas · parcial
+- `prompts/timguignard-623571.md` — Opus 5.5 video by @TimGuignard · svg · parcial
+- `prompts/itsahmedharoon-544194.md` — Opus 5.5 video by @itsahmedharoon · svg · parcial
+- `prompts/stokebuilder-356793.md` — Opus 5.5 video by @stokebuilder · canvas, svg · parcial
+- `prompts/henritoivar-445215.md` — Opus 5.5 video by @HenriToivar · canvas, svg, gsap · parcial
+- `prompts/rpa-dake-593915.md` — Opus 5.5 video by @rpa_dake · svg · parcial
+- `prompts/itsyashf-692347.md` — Opus 5.5 video by @itsyashf · canvas, svg · parcial
+- `prompts/itakahashikun-990109.md` — Opus 5.5 video by @iTakahashikun · canvas, svg · parcial
+- `prompts/cboyack-407181.md` — Opus 5.5 video by @cboyack · canvas, svg · parcial
+- `prompts/salmanr2d2-661615.md` — Opus 5.5 video by @salmanr2d2 · canvas, svg · parcial
+- `prompts/ninjaswebcom-684126.md` — Opus 5.5 video by @ninjaswebcom · canvas · parcial
+- `prompts/tony-tt-872147.md` — Opus 5.5 video by @_Tony_TT_ · canvas · parcial
+- `prompts/samissudo-927179.md` — Opus 5.5 video by @samissudo · canvas, svg, gsap · parcial
+- `prompts/imthatcarlos-133592.md` — Opus 5.5 video by @imthatcarlos · canvas, svg, ai-image · parcial
+- `prompts/0xlangeai-597929.md` — Opus 5.5 video by @0xlangeai · svg · parcial
+- `prompts/xamfonos-004331.md` — Opus 5.5 video by @xamfonos_ · svg · parcial
+- `prompts/tetsu-tetsu333-576886.md` — Opus 5.5 video by @tetsu_tetsu333 · svg, gsap · parcial
+- `prompts/aylmerth-356252.md` — Opus 5.5 video by @AylmerTH · canvas · parcial
+- `prompts/falcong-j-277506.md` — Opus 5.5 video by @FalconG_J · svg, gsap · parcial
+- `prompts/aichrislee-408244.md` — Opus 5.5 video by @aichrislee · threejs, shader, svg
+- `prompts/0xspikez-483865.md` — Opus 5.5 video by @0xSpikez · threejs, shader, svg
+- `prompts/eyadnour-172216.md` — Opus 5.5 video by @eyadnour · threejs, canvas, audio
+- `prompts/aichrislee-378670.md` — Opus 5.5 video by @aichrislee · threejs, canvas, audio
+- `prompts/fleyta88-443662.md` — GSAP Timeline with Frame Checking · 
+- `prompts/wilzerjb-007630.md` — Business Motion Explainer · 
+- `prompts/eleanorina-653042.md` — Manim Math Explainer · 
+- `prompts/nakazakifam-831964.md` — Code-Only Psychology Explainer Video · 
+- `prompts/incognitoprince-849212.md` — After Effect Style Kinetic Text Explainer · 
+- `prompts/rashadmirza404-020971.md` — Optogenetics Animation Explainer · 
+- `prompts/nilou-salehi-458567.md` — Across Product Demo Video · 
+- `prompts/ivysparkleai-543294.md` — Music Video Generation from Song · 
+- `prompts/archiveexplorer-560622.md` — Wireframe-First Ad · 
+- `prompts/xodud-rkd-160324.md` — Pixel Motion History Animation · 
+- `prompts/cryptoxorz-359201.md` — Opus 5.5 Educational Explainer Video · 
+- `prompts/haribuilds-007643.md` — Point Nemo Data Animation · 
+- `prompts/ulyssexbt-205279.md` — Self-Prompt Film Code · 
+- `prompts/henrygsing-050247.md` — Kurzgesagt Style Explainer Animation · 
+- `prompts/michaelraspuzzi-740595.md` — Animated Explainer Video Prompts for Opus 5.5 · 
+- `prompts/woojinrad-455731.md` — Colored-Pencil Explainer · 
+- `prompts/koushikde-937635.md` — Resume Motion Video Storyboard · 
+- `prompts/gabzofar-852359.md` — Apple-Style Product Motion Film · 
+- `prompts/gdgtify-130294.md` — Kinetic Typography Speech Visualization · 
+- `prompts/mablesjoseph-735781.md` — Motion Graphics Explainer · 
+- `prompts/blueoctopusai-270222.md` — Explainer Video Prompt for Opus 5.5 · 
+- `prompts/jdverolme-302685.md` — History of AI Motion Video · 
+- `prompts/sudo-kiran-670892.md` — Distilbook Product Motion Graphic · 
+- `prompts/king1818888-642123.md` — Claude Opus 5.5 Animation Workflow Tutorial · 
+- `prompts/charlessieg-370949.md` — Opus 5.5 Workflow for Marketing Explainer Videos · 
+- `prompts/andrewmichaelsa-385936.md` — Animated Explainer Video Generator · 
+- `prompts/buildfastwithai-780900.md` — Indian Civilization History Video · 
+- `prompts/noah-z-zhang-765393.md` — Dark Mode Kinetic Typography · 
+- `prompts/gandamu-ml-124280.md` — Another World Style Animation Player · 
+- `prompts/deedydas-407965.md` — SQLite Codebase Explainer Video · 
+- `prompts/koldo2k-741714.md` — Color Wheel Motion Graphics · 
+- `prompts/linke1427832-343079.md` — Cinematic AI History · 
+- `prompts/astroboysoup-861770.md` — App Explainer Animation · 
+- `prompts/bradmillscan-839974.md` — Bitcoin Monetary History Animation · 
+- `prompts/yunn260414-016888.md` — Git Explainer · 
+- `prompts/howlemont-503897.md` — Educational Animated Explainer · 
+- `prompts/cagrimbakirci-842869.md` — Evolution of Eye Explainer · 
+- `prompts/dotey-927166.md` — Epic History Chronology · 
+- `prompts/ldataengineer-823010.md` — P(DOOM) Cinematic Explainer · 
+- `prompts/pluginplay-472343.md` — Opus 5.5 Pixel Art Boomerang LLM History · 
+- `prompts/dotey-522564.md` — What is Transformer Explainer · 
+- `prompts/bitfish-539054.md` — Napoleon Hill Insight Animated Explainer Video · 
+- `prompts/yankis0x-174321.md` — UI Motion Design Workflow Guide · 
+- `prompts/amol909s-607293.md` — App Feature Motion Graphics Explainer · 
+- `prompts/sanjeevn72-151834.md` — UI State Morph Animation · 
+- `prompts/rneayan-417829.md` — Population Marbles Data Animation · 
+- `prompts/retropunkai-060898.md` — The Sphere Las Vegas History Animation · 
+- `prompts/so-ainsight-225926.md` — Claude Code Explainer Animation · 
+
+## Cenas 3D
+
+- `prompts/twoclipping-000267.md` — Opus 5.5 video by @twoclipping · svg, css
+- `prompts/morse-369333.md` — Opus 5.5 video by @__morse · svg
+- `prompts/lukasersil-726495.md` — Opus 5.5 video by @lukasersil · threejs, shader, canvas, svg
+- `prompts/bthreeagency-827092.md` — Opus 5.5 video by @BThreeAgency · canvas, svg, css
+- `prompts/alexalbert-274839.md` — Opus 5.5 video by @alexalbert__ · threejs, shader, canvas
+- `prompts/michaelzsguo-782312.md` — Opus 5.5 video by @Michaelzsguo · shader, canvas
+- `prompts/twoclipping-496100.md` — Opus 5.5 video by @twoclipping · canvas
+- `prompts/axtonliu-290566.md` — Opus 5.5 video by @AxtonLiu · shader, webgl
+- `prompts/mdaman010-111079.md` — Opus 5.5 video by @mdaman010 · threejs, shader, svg
+- `prompts/sayan-shanky-868515.md` — Opus 5.5 video by @Sayan_shanky · threejs, shader, canvas, svg
+- `prompts/buildfastwithai-597035.md` — Opus 5.5 video by @BuildFastWithAI · threejs, canvas
+- `prompts/raphaelaubryy-687877.md` — Opus 5.5 video by @RaphaelAubryy · css
+- `prompts/anirockshady-032809.md` — Opus 5.5 video by @anirockshady · threejs, shader, svg
+- `prompts/anilraok-009118.md` — Opus 5.5 video by @Anilraok · threejs, canvas
+- `prompts/ishuagra02-678129.md` — Opus 5.5 video by @ishuagra02 · threejs, shader, particles
+- `prompts/demitiyageekzen-818523.md` — Opus 5.5 video by @DemitiyaGeekzen · shader, webgl, canvas, audio · parcial
+- `prompts/gmgmgm1545-245507.md` — Opus 5.5 video by @gmgmgm1545 · canvas, audio · parcial
+- `prompts/jarvis11x-544635.md` — Opus 5.5 video by @jarvis11x · threejs, shader, canvas · parcial
+- `prompts/kewai386772-276947.md` — Opus 5.5 video by @KeWai386772 · threejs, shader · parcial
+- `prompts/nft-chen-350878.md` — Opus 5.5 video by @NFT_Chen · threejs, shader, canvas · parcial
+- `prompts/0xsolty-735200.md` — Opus 5.5 video by @0xSolty · shader, webgl · parcial
+- `prompts/curieuxexplorer-272483.md` — Opus 5.5 video by @CurieuxExplorer · threejs, shader, canvas · parcial
+- `prompts/myonisto-923578.md` — Opus 5.5 video by @myonisto · threejs, canvas · parcial
+- `prompts/truenyl-447745.md` — Opus 5.5 video by @truenyl · threejs, shader · parcial
+- `prompts/builtbysketch-114092.md` — Opus 5.5 video by @builtbysketch · threejs, canvas · parcial
+- `prompts/per-simmons-944727.md` — Opus 5.5 video by @per_simmons_ · threejs, canvas, svg · parcial
+- `prompts/nicolamanzini-156628.md` — Opus 5.5 video by @NicolaManzini · threejs, shader, canvas · parcial
+- `prompts/0xwast3-222104.md` — Opus 5.5 video by @0xWast3 · threejs, shader · parcial
+- `prompts/wzarok-283635.md` — Opus 5.5 video by @wzarok · threejs · parcial
+- `prompts/goofyninjaaa-315331.md` — Opus 5.5 video by @goofyninjaaa · threejs, canvas, svg, gsap · parcial
+- `prompts/friskyggg-054427.md` — Opus 5.5 video by @FriskyGGG · threejs, shader, canvas · parcial
+- `prompts/ai-ba-reza-113363.md` — Opus 5.5 video by @ai_ba_reza · threejs, shader, canvas · parcial
+- `prompts/souradip3000-800291.md` — Opus 5.5 video by @Souradip3000 · threejs, shader, svg, particles · parcial
+- `prompts/techartist-786274.md` — Opus 5.5 video by @techartist_ · threejs, shader · parcial
+- `prompts/lribes4-742305.md` — Opus 5.5 video by @lribes4 · threejs · parcial
+- `prompts/eigeorguy-813651.md` — Opus 5.5 video by @eigeorguy · threejs, shader, canvas · parcial
+- `prompts/kum1ta-740521.md` — Opus 5.5 video by @kum1ta · threejs, canvas, svg · parcial
+- `prompts/vectorcrossprod-436573.md` — Opus 5.5 video by @VectorCrossProd · threejs, canvas, svg · parcial
+- `prompts/sanjay-khadka07-620029.md` — Opus 5.5 video by @sanjay_khadka07 · threejs, shader · parcial
+- `prompts/ksmialowski-473410.md` — Opus 5.5 video by @ksmialowski · threejs, shader, canvas · parcial
+- `prompts/acoramaa-248467.md` — Opus 5.5 video by @Acoramaa · threejs, shader, svg, audio · parcial
+- `prompts/maruo-0314-998343.md` — Opus 5.5 video by @Maruo_0314 · threejs, shader, canvas · parcial
+- `prompts/aayush4soni-644283.md` — Opus 5.5 video by @aayush4soni · threejs, canvas · parcial
+- `prompts/allforbigfire-029657.md` — Opus 5.5 video by @allforbigfire · threejs, canvas, audio · parcial
+- `prompts/ewashoku-201053.md` — Opus 5.5 video by @EWashoku · threejs, canvas, svg · parcial
+- `prompts/ajthemongol-318512.md` — Opus 5.5 video by @AJtheMongol · threejs, svg · parcial
+- `prompts/petert-540960.md` — Opus 5.5 video by @_petert · threejs, shader · parcial
+- `prompts/petert-635793.md` — Opus 5.5 video by @_petert · threejs, shader, canvas · parcial
+- `prompts/ambiguous-ai-389509.md` — Opus 5.5 video by @ambiguous_ai · threejs, canvas, svg · parcial
+- `prompts/arumii-movie-622720.md` — Opus 5.5 video by @arumii_movie · threejs, shader · parcial
+- `prompts/arumii-movie-249613.md` — Opus 5.5 video by @arumii_movie · threejs · parcial
+- `prompts/argbeknwn-466818.md` — Opus 5.5 video by @argbeknwn · threejs, shader, canvas · parcial
+- `prompts/aijipusi75693-284735.md` — Opus 5.5 video by @aijipusi75693 · threejs, shader, canvas · parcial
+- `prompts/mondemsuraj-691517.md` — Opus 5.5 video by @MondemSuraj · threejs, shader
+- `prompts/aichrislee-476025.md` — Opus 5.5 video by @aichrislee · threejs, canvas, audio
+- `prompts/thebuggeddev-482912.md` — Opus 5.5 video by @thebuggeddev · threejs, shader, canvas, svg
+- `prompts/youwareai-300653.md` — Three.js Castle Above Clouds Experience · 
+- `prompts/juancarlos17626-429530.md` — 3D Logo Intro Animation Studio · 
+- `prompts/thusatharan-433543.md` — Golden Hour Manor Scene · 
+- `prompts/rubenssoto-ai-802657.md` — Cinematic F1 Pit Stop Animation · 
+- `prompts/thusatharan-640926.md` — Procedural 3D Elephant in HTML · 
+- `prompts/shunshu32385143-944719.md` — Temple of Heaven 3D Animation · 
+- `prompts/buildfastwithai-844291.md` — Opus 5.5 Rust Fframes Audio-Reactive Video · 
+- `prompts/juancarlos17626-382690.md` — Realistic Lava Lamp WebGL Animation · 
+- `prompts/cryptowluha-060792.md` — House Growth Animation · 
+- `prompts/tonysurix-596746.md` — Blender Previs Car Chase · 
+- `prompts/ultimaxbt-549714.md` — Food Craving Product Launch Film · 
+- `prompts/simonasltu1-981181.md` — Cinematic Dreams Visual Experience · 
+- `prompts/btcup99-311469.md` — AI History Motion Video · 
+- `prompts/mdaman010-207866.md` — Middle-earth Three.js World · 
+- `prompts/wikiwayne-080350.md` — Claymation Desk Scene Comparison · 
+- `prompts/wikiwayne-486055.md` — Blender Claymation Script Comparison · 
+- `prompts/mdaman010-610173.md` — Middle-earth Three.js Cinematic Journey · 
+- `prompts/okazaky-084783.md` — Lyric MV 3D Engine Workflow · 
+- `prompts/aicreataro-864070.md` — Frozen Memoir Narration Animation · 
+- `prompts/nft-chen-068069.md` — 15 Styles of Code-Generated Videos for Claude Opus 5.5 · 
+- `prompts/tanabe-fragm-322001.md` — Tile Mosaic Ad Video Prompt for Claude Opus 5.5 · 
+- `prompts/earthwalkerx17-912577.md` — Middle-earth 3D Cinematic Journey · 
+- `prompts/llama3dstudio-918962.md` — Procedural Fried Chicken Animation · 
+- `prompts/rossaxbt-312793.md` — Product Promo Motion · 
+- `prompts/rafiroutes-596199.md` — Anime Style Opening Teaser · 
+- `prompts/ivanainai-190629.md` — Iron Man Helmet Three.js Animation · 
+- `prompts/kisaka-ki-859326.md` — Debris Flow Visualization Model · 
+- `prompts/sadalbert10-856416.md` — Pelican Bicycle Pixel Art Animation · 
+- `prompts/ayi-ainotes-933194.md` — Opus 5.5 Hand-drawn Style SVG Animation · 
+- `prompts/dan-proggg-274533.md` — Five-Story Pagoda 3D Build · 
+- `prompts/riyadbkhsh-300736.md` — Times Square Launch Video · 
+- `prompts/generussai-904308.md` — Mathematical Art Animation Video · 
+- `prompts/oab10don-457273.md` — Blender Cloud Dance Video via Python · 
+- `prompts/xanares-738984.md` — Demoscene Fractal Tech Demo · 
+- `prompts/gdgtify-989608.md` — Kinetic Typography JFK Speech Film · 
+- `prompts/akakuma0219-658335.md` — One-Minute Horror Video Template for Three.js · 
+- `prompts/gorden-sun-797351.md` — Beat-Synced 3D Sphere Animation · 
+- `prompts/grace-sunnyy-486816.md` — Solar System Explainer · 
+- `prompts/filicroval-168898.md` — Voxel Capybara Hot Tub World · 
+- `prompts/vic305-885957.md` — SpaceX Flight 13 3D Animation · 
+- `prompts/everestchris6-399895.md` — High-End Motion Video System · 
+- `prompts/kopert0x-098349.md` — "The Last Piano" Animated Short · 
+- `prompts/obydulme-052905.md` — Painting the Night Generative Short · 
+- `prompts/nofollowers2023-974928.md` — Space Outpost Paper Cutout Short Film · 
+- `prompts/btc5887899-288258.md` — NVIDIA Blackwell GPU 3D Journey · 
+- `prompts/mochi-agi-421448.md` — Late Night Horror Station Animation · 
+- `prompts/saltyaom-620933.md` — WebGL Video Generation from Storyboard · 
+- `prompts/twoclipping-762046.md` — Product Launch Motion Design Template · 
+- `prompts/niirajrshah-163739.md` — Life Timeline Motion Graphics Video · 
+- `prompts/muhamma61700589-512003.md` — Futuristic City 3D View Generation · 
+- `prompts/0xcodez-474136.md` — Crayon Piano Performance Animation · 
+- `prompts/dan-riverbendai-163640.md` — Minimalist Sketch Animation · 
+- `prompts/milos-gis-317580.md` — Portland Bus Service Map Animation · 
+- `prompts/kadaliao-048854.md` — Pixar Style AI Battle Animation via Blender · 
+- `prompts/mizugame-22-719199.md` — Shishi Odoshi Motion Graphic · 
+- `prompts/syntheticbeef-389075.md` — Impressive Self-Demo · 
+- `prompts/essjaykay755-847163.md` — Cinematic Kinetic Typography Reel · 
+- `prompts/victortaelin-875778.md` — Room to quarks zoom animation · 
+- `prompts/sammmaing-702076.md` — Doctor Doom LEGO Build Instructions Animation · 
+- `prompts/agioyaz-397647.md` — White Space Stained Glass Film · 
+- `prompts/agioyaz-986461.md` — Yohaku Short Film · 
+
+## Jogos e interativos
+
+- `prompts/mandelduck-768972.md` — Opus 5.5 video by @MandelDuck · threejs, shader, canvas
+- `prompts/gandamu-ml-220530.md` — Opus 5.5 video by @gandamu_ml · threejs, shader, canvas, audio
+- `prompts/0xchuckstock-879327.md` — Opus 5.5 video by @0xChuckstock · threejs, shader, playable
+- `prompts/zacxbt-944604.md` — Opus 5.5 video by @zacxbt · canvas, pixel, playable
+- `prompts/lexnlin-241739.md` — Opus 5.5 video by @LexnLin · threejs, shader
+- `prompts/redpersongpt-284430.md` — Opus 5.5 video by @redpersongpt · svg
+- `prompts/froessell-562325.md` — Opus 5.5 video by @froessell · threejs, canvas, physics, playable
+- `prompts/aisongman-461057.md` — Opus 5.5 video by @aisongman · canvas, pixel, playable
+- `prompts/bilimfili1-459762.md` — Opus 5.5 video by @Bilimfili1 · canvas, svg
+- `prompts/ved-cj-066575.md` — Opus 5.5 video by @Ved_CJ · threejs, canvas
+- `prompts/nolit64-347627.md` — Opus 5.5 video by @NoLit64 · canvas, audio, playable · parcial
+- `prompts/opener-ai-843891.md` — Opus 5.5 video by @opener_ai · canvas, pixel, playable
+- `prompts/deifosv-786581.md` — Opus 5.5 video by @deifosv · canvas, gsap, css
+- `prompts/buildfastwithai-582551.md` — Opus 5.5 video by @BuildFastWithAI · threejs, canvas
+- `prompts/niegramotny-197521.md` — Opus 5.5 video by @_nieGRAMotny_ · threejs, shader, canvas, physics
+- `prompts/0xrathi-511319.md` — Opus 5.5 video by @0xRathi · threejs, shader, physics, playable
+- `prompts/ryzoft-887481.md` — Opus 5.5 video by @Ryzoft · threejs, shader, particles
+- `prompts/happycapyai-634965.md` — Opus 5.5 video by @happycapyai · threejs, canvas, svg, playable · parcial
+- `prompts/mrblock-096062.md` — Opus 5.5 video by @mrblock · threejs, shader, canvas · parcial
+- `prompts/op7418-814408.md` — Opus 5.5 video by @op7418 · threejs, shader, canvas, gsap
+- `prompts/janlaywss-379361.md` — Opus 5.5 video by @janlaywss · threejs, canvas, playable · parcial
+- `prompts/0xpai-eth-635565.md` — Opus 5.5 video by @0xpai_eth · canvas, pixel, playable · parcial
+- `prompts/op7418-818226.md` — Opus 5.5 video by @op7418 · canvas, svg, gsap, css
+- `prompts/akokoi1-469188.md` — Opus 5.5 video by @akokoi1 · threejs, canvas, audio · parcial
+- `prompts/ggsimm-535814.md` — Opus 5.5 video by @ggsimm · canvas, audio · parcial
+- `prompts/mozetech-471882.md` — Opus 5.5 video by @MozeTech · canvas, audio, pixel, playable · parcial
+- `prompts/janeloic-905802.md` — Opus 5.5 video by @JaneLoic · canvas, audio · parcial
+- `prompts/agentgamesbot-355554.md` — Opus 5.5 video by @agentgamesbot · canvas, pixel, playable · parcial
+- `prompts/curieuxexplorer-519730.md` — Opus 5.5 video by @CurieuxExplorer · threejs, shader, playable · parcial
+- `prompts/redp314-642106.md` — Opus 5.5 video by @redp314 · svg · parcial
+- `prompts/jasperdeboer-157391.md` — Opus 5.5 video by @jasperdeboer · threejs, canvas · parcial
+- `prompts/curieuxexplorer-772215.md` — Opus 5.5 video by @CurieuxExplorer · threejs, shader, audio · parcial
+- `prompts/rehan-shei-839416.md` — Opus 5.5 video by @rehan_shei · canvas, pixel · parcial
+- `prompts/rush3rx-342153.md` — Opus 5.5 video by @Rush3rx · threejs, shader, canvas · parcial
+- `prompts/maxthelion-649723.md` — Opus 5.5 video by @maxthelion · threejs, canvas · parcial
+- `prompts/zacxbt-234711.md` — Opus 5.5 video by @zacxbt · threejs, shader, audio · parcial
+- `prompts/jstjs-129051.md` — Opus 5.5 video by @jstjs_ · canvas, gsap · parcial
+- `prompts/dreyk0o0-165270.md` — Opus 5.5 video by @dreyk0o0 · threejs, shader, playable · parcial
+- `prompts/boona11-415751.md` — Opus 5.5 video by @boona11 · canvas, playable · parcial
+- `prompts/dmowlin-221566.md` — Opus 5.5 video by @dmowlin · canvas, pixel · parcial
+- `prompts/nqaze-939886.md` — Opus 5.5 video by @nQaze · threejs, shader, canvas, particles · parcial
+- `prompts/kenjiphang-750512.md` — Opus 5.5 video by @KenjiPhang · canvas, svg, gsap · parcial
+- `prompts/anduraio-570761.md` — Opus 5.5 video by @anduraio · threejs, shader, canvas · parcial
+- `prompts/kepochnik-237752.md` — Opus 5.5 video by @kepochnik · threejs, canvas, playable · parcial
+- `prompts/angie-carel-954689.md` — Opus 5.5 video by @angie_carel · threejs, shader, canvas, audio · parcial
+- `prompts/deeprajo1-834106.md` — Opus 5.5 video by @deeprajO1 · threejs, shader, canvas · parcial
+- `prompts/vibechine-465008.md` — Opus 5.5 video by @vibechine · threejs, shader, canvas, playable · parcial
+- `prompts/blitast-studio-257328.md` — Opus 5.5 video by @blitast_studio · threejs, shader, audio · parcial
+- `prompts/waseemkhalo-636267.md` — Opus 5.5 video by @waseemkhalo · canvas, pixel · parcial
+- `prompts/taylorbereiter-189192.md` — Opus 5.5 video by @TaylorBereiter · canvas, audio · parcial
+- `prompts/smallhusk-272056.md` — Opus 5.5 video by @smallhusk · threejs, shader · parcial
+- `prompts/lisp-mi-139812.md` — Opus 5.5 video by @lisp_mi · threejs, canvas · parcial
+- `prompts/itsjdraven-557760.md` — Opus 5.5 video by @itsjdraven · threejs, canvas, playable · parcial
+- `prompts/izmaelmag-282849.md` — Opus 5.5 video by @izmaelmag · threejs, canvas, audio, pixel · parcial
+- `prompts/llama3dstudio-012980.md` — Opus 5.5 video by @llama3dstudio · threejs, shader, playable · parcial
+- `prompts/hellovyom-800659.md` — Opus 5.5 video by @HelloVyom · threejs, playable · parcial
+- `prompts/realfedeuru-475858.md` — Opus 5.5 video by @RealFedeURU · threejs, shader, canvas, playable · parcial
+- `prompts/brainwavepub-812667.md` — Opus 5.5 video by @BrainWavePub · threejs, svg, gsap · parcial
+- `prompts/alex-vainshtein-195332.md` — Opus 5.5 video by @Alex_Vainshtein · threejs, canvas, particles · parcial
+- `prompts/brenbuilds-386902.md` — Opus 5.5 video by @BrenBuilds · threejs, shader, canvas · parcial
+- `prompts/mayuresh-empire-687553.md` — Opus 5.5 video by @mayuresh_empire · threejs, shader, canvas, particles · parcial
+- `prompts/tonnusos-006126.md` — Opus 5.5 video by @tonnusos · canvas, particles, audio, pixel · parcial
+- `prompts/codrops-340299.md` — Opus 5.5 video by @codrops · threejs, canvas, pixel · parcial
+- `prompts/mappletour-334921.md` — Opus 5.5 video by @mappletour · canvas, playable · parcial
+- `prompts/spacyapps-157886.md` — Opus 5.5 video by @SpacyApps · threejs, shader, canvas
+- `prompts/pagustafsson-566609.md` — Krakatoa Volcano WebGL Animation · 
+- `prompts/arixxbt-292438.md` — Interactive Zen Garden HTML Animation · 
+- `prompts/chang-200908.md` — 3D Brake Pedal Stress Simulation Animation · 
+- `prompts/drake5112-661428.md` — Interactive HTML Presentation with Narration · 
+- `prompts/aichrislee-938609.md` — Saturn V Rocket Interactive 3D Model · 
+- `prompts/twoclipping-041659.md` — Pixel Art Voiceover Film · 
+- `prompts/mrkindey-267498.md` — Self-Building 3D House Animation · 
+- `prompts/atif-0075-639088.md` — Physics-Based Cow Animation · 
+- `prompts/techartist-697078.md` — Rube Goldberg Domino Physics Sim · 
+- `prompts/aichrislee-922082.md` — Interactive 3D V8 Engine Animation · 
+- `prompts/rossaxbt-707651.md` — Motion Design System · 
+- `prompts/konstantinsaifo-169107.md` — Animated Warehouse Simulation · 
+- `prompts/aichrislee-479847.md` — Interactive 3D Jet Engine Animation · 
+- `prompts/ivanainai-245918.md` — Interactive Stained-Glass Hibiscus Art · 
+- `prompts/tarunyadav9761-053244.md` — Product Promo Video Remotion · 
+- `prompts/abyssalld-602690.md` — Opus 5.5 Medium Rocket Simulation · 
+- `prompts/youwareai-259061.md` — Interactive Ink Painting Simulation · 
+- `prompts/chudry223-657142.md` — Interactive Particle Effects Animation · 
+- `prompts/techartist-021472.md` — 3D House Construction Animation · 
+- `prompts/gkxspace-923139.md` — Opus 5.5 Code-Generated Pixel Short Film · 
+- `prompts/jakubantowski-020905.md` — Interactive Felt Character in Three.js · 
+- `prompts/threeaus-886343.md` — Motion Design Comparison: Sol vs Opus 5.5 · 
+- `prompts/egeberkina-949521.md` — Interactive Tectonic Earthquake Simulation Video · 
+- `prompts/theparuchh-013286.md` — WebGPU Mechanical Watch Animation · 
+- `prompts/adomicael-707503.md` — Interactive AI Data Flow Explainer Animation · 
+- `prompts/curieuxexplorer-320803.md` — The Humanity Machine Interactive Film · 
+- `prompts/apoorvjain25-945542.md` — Photon Journey Remotion Animation · 
+- `prompts/curieuxexplorer-590917.md` — Neuroscience Friendship Study Film · 
+- `prompts/op7418-021491.md` — Mobile Game Highlight Reel Motion Design · 
+- `prompts/gigabit-million-959719.md` — Steam Game News Motion Graphics · 
+- `prompts/typingmusou-160705.md` — Remotion Three.js Typing Game CM · 
+- `prompts/curieuxexplorer-016717.md` — Type 1 Diabetes Interactive 3D Visualization · 
+- `prompts/artless101-964679.md` — Cinematic 3D rocket launch · 
+- `prompts/otatechie-035448.md` — Moonwalk Dance Animation · 
+- `prompts/godsboy7777-150194.md` — Marble Computer Animation · 
+- `prompts/engmoelgaraihy-694832.md` — Interactive Boat Scene with Opus 5.5 · 
