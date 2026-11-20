@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "oracao-da-manha",
+    "titulo": "Oração da Manhã",
+    "tema": "manha",
+    "frases": [
+      "Senhor, obrigado por mais este amanhecer.",
+      "Antes de qualquer pressa, eu entrego este dia em Tuas mãos.",
+      "Guia os meus passos e as minhas palavras.",
+      "Dá-me paciência no trabalho e calma nas dificuldades.",
+      "Abençoa minha família, meus amigos e quem cruzar o meu caminho.",
+      "Que eu seja luz por onde eu passar.",
+      "E que, ao fim do dia, eu possa agradecer de novo.",
+      "Em nome de Jesus,"
+    ]
+  },
+  {
+    "slug": "oracao-pela-familia",
+    "titulo": "Oração pela Família",
+    "tema": "familia",
+    "frases": [
+      "Pai, eu coloco a minha família diante de Ti.",
+      "Protege a nossa casa e cada pessoa que mora nela.",
+      "Onde houver mágoa, traz o perdão.",
+      "Onde houver cansaço, renova as nossas forças.",
+      "Cuida da nossa saúde e do nosso sustento.",
+      "Ensina-nos a ouvir mais e a julgar menos.",
+      "Que o amor seja maior do que qualquer discussão.",
+      "E que a Tua paz faça morada no nosso lar.",
+      "Em nome de Jesus,"
+    ]
+  },
+  {
+    "slug": "oracao-para-dormir",
+    "titulo": "Oração para Dormir em Paz",
+    "tema": "noite",
+    "frases": [
+      "Senhor, o dia terminou e eu venho descansar em Ti.",
+      "Obrigado por cada momento, até pelos mais difíceis.",
+      "Perdoa as minhas falhas de hoje.",
+      "Tira do meu coração toda preocupação.",
+      "Acalma os meus pensamentos e guarda o meu sono.",
+      "Protege quem eu amo durante esta noite.",
+      "E amanhã, desperta-me com esperança renovada.",
+      "Em nome de Jesus,"
+    ]
+  }
+]

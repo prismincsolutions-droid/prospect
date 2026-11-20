@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Oração</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cinzel:wght@600&display=block">
+<script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6.0.4/dist/d3-delaunay.min.js"></script>
+<style>
+  html, body { margin: 0; background: #000; }
+  canvas { display: block; width: 1080px; height: 1920px; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+// Estética de vitral de igreja: janela em arco gótico, mosaico de vidro com chumbo,
+// rosácea com o símbolo da oração e luz atravessando o vidro.
+// Cada quadro é função pura do tempo t: render(t). Dados em window.DATA.
+const W = 1080, H = 1920;
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d');
+
+const TEMAS = {
+  manha: {
+    vidros: ['#b8860b', '#d9a521', '#e8b93a', '#c0392b', '#8e1b1b', '#1f4e9c', '#2a6f4f', '#d97a1e', '#f0cf6a'],
+    pesos:  [3, 3, 3, 2, 1, 2, 1, 2, 2],
+    rosa: ['#f2c14e', '#c0392b', '#1f4e9c', '#e8b93a'], simbolo: 'sol', luz: [255, 214, 140], destaque: '#ffd36b'
+  },
+  familia: {
+    vidros: ['#8e1b2b', '#b02a3c', '#c0392b', '#d9a521', '#2a6f4f', '#1e5c46', '#5b2a6e', '#e8b93a', '#1f4e9c'],
+    pesos:  [3, 3, 2, 2, 2, 1, 1, 1, 1],
+    rosa: ['#b02a3c', '#e8b93a', '#2a6f4f', '#8e1b2b'], simbolo: 'coracao', luz: [255, 190, 150], destaque: '#ffc58a'
+  },
+  noite: {
+    vidros: ['#0f2a6b', '#163c8c', '#1f4e9c', '#2b2470', '#4a2a7a', '#0c1f4f', '#5a7bc0', '#c9a43a', '#1a5a7a'],
+    pesos:  [3, 3, 3, 2, 2, 2, 1, 1, 1],
+    rosa: ['#1f4e9c', '#c9a43a', '#4a2a7a', '#0f2a6b'], simbolo: 'lua', luz: [190, 210, 255], destaque: '#cfe0ff'
+  }
+};
+
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const ease = x => { x = clamp(x); return x * x * (3 - 2 * x); };
+function rnd(i) { const s = Math.sin(i * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); }
+function hex(c) { return [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)); }
+function rgb(a, k) { return `rgb(${a.map(v => Math.round(clamp(v * k, 0, 255))).join(',')})`; }
+
+// ---------- geometria da janela ----------
+const JX0 = 70, JX1 = 1010, JTOPO = 70, JBASE = 1850, JARCO = 620; // arco gótico de JTOPO até JARCO
+// arco gótico (ogival): duas curvas que se encontram no ápice
+function caminhoArco(c, enc = 0) {
+  const x0 = JX0 + enc, x1 = JX1 - enc, base = JBASE - enc, topo = JTOPO + enc, mola = JARCO;
+  const mx = (x0 + x1) / 2;
+  c.beginPath();
+  c.moveTo(x0, base);
+  c.lineTo(x0, mola);
+  c.bezierCurveTo(x0, mola - 300, mx - 170, topo + 90, mx, topo);
+  c.bezierCurveTo(mx + 170, topo + 90, x1, mola - 300, x1, mola);
+  c.lineTo(x1, base);
+  c.closePath();
+}
+
+const ROSA = { x: 540, y: 600, r: 300 };
+const PLACA = { x: 120, y: 1090, w: 840, h: 470 };
+
+// ---------- pré-cálculo (uma vez por oração) ----------
+let PRE = null;
+function preparar(T) {
+  // pontos espalhados (grade com variação) para o mosaico de Voronoi
+  const pts = [];
+  let i = 0;
+  for (let y = JTOPO - 40; y < JBASE + 60; y += 118) {
+    for (let x = JX0 - 40; x < JX1 + 60; x += 112) {
+      pts.push([x + (rnd(i) - 0.5) * 90, y + (rnd(i + 999) - 0.5) * 95]); i++;
+    }
+  }
+  const vor = d3.Delaunay.from(pts).voronoi([JX0 - 10, JTOPO - 10, JX1 + 10, JBASE + 10]);
+  const total = T.pesos.reduce((a, b) => a + b, 0);
+  const pecas = pts.map((p, k) => {
+    const poly = vor.cellPolygon(k);
+    let r = rnd(k + 4242) * total, ci = 0;
+    while (r > T.pesos[ci]) { r -= T.pesos[ci]; ci++; }
+    return { poly, cx: p[0], cy: p[1], cor: hex(T.vidros[Math.min(ci, T.vidros.length - 1)]), var: 0.85 + rnd(k + 77) * 0.3, fase: rnd(k + 13) * 6.28 };
+  }).filter(p => p.poly);
+
+  // textura do vidro (manchas e bolhas), desenhada uma vez
+  const tex = document.createElement('canvas'); tex.width = W; tex.height = H;
+  const tc = tex.getContext('2d');
+  for (let k = 0; k < 2600; k++) {
+    const x = rnd(k + 1) * W, y = rnd(k + 2) * H, r = 6 + rnd(k + 3) * 40;
+    const g = tc.createRadialGradient(x, y, 0, x, y, r);
+    const claro = rnd(k + 4) > 0.5;
+    g.addColorStop(0, claro ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.16)');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    tc.fillStyle = g; tc.beginPath(); tc.arc(x, y, r, 0, 6.283); tc.fill();
+  }
+  // pedra ao redor da janela
+  const pedra = document.createElement('canvas'); pedra.width = W; pedra.height = H;
+  const pc = pedra.getContext('2d');
+  const gp = pc.createLinearGradient(0, 0, 0, H);
+  gp.addColorStop(0, '#1b1612'); gp.addColorStop(1, '#0d0a08');
+  pc.fillStyle = gp; pc.fillRect(0, 0, W, H);
+  for (let k = 0; k < 900; k++) {
+    pc.fillStyle = `rgba(${rnd(k) > 0.5 ? '255,240,220' : '0,0,0'},${0.03 + rnd(k + 5) * 0.05})`;
+    pc.fillRect(rnd(k + 6) * W, rnd(k + 7) * H, 2 + rnd(k + 8) * 6, 2 + rnd(k + 9) * 6);
+  }
+  // juntas de blocos de pedra
+  pc.strokeStyle = 'rgba(0,0,0,0.35)'; pc.lineWidth = 2;
+  for (let y = 0; y < H; y += 96) {
+    pc.beginPath(); pc.moveTo(0, y); pc.lineTo(W, y); pc.stroke();
+    for (let x = (y / 96) % 2 ? 0 : 90; x < W; x += 180) { pc.beginPath(); pc.moveTo(x, y); pc.lineTo(x, y + 96); pc.stroke(); }
+  }
+  PRE = { pecas, tex, pedra, tema: T };
+}
+
+// intensidade da luz do sol atravessando o vidro em (x, y) no tempo t
+function luz(x, y, t) {
+  const sx = 200 + 680 * (0.5 + 0.5 * Math.sin(t * 0.11 - 1.2));
+  const sy = 420 + 260 * Math.sin(t * 0.07);
+  const d = Math.hypot(x - sx, (y - sy) * 0.7);
+  return 0.62 + 0.55 * Math.exp(-(d * d) / (2 * 380 * 380));
+}
+
+function poligono(c, poly) {
+  c.beginPath(); c.moveTo(poly[0][0], poly[0][1]);
+  for (let i = 1; i < poly.length; i++) c.lineTo(poly[i][0], poly[i][1]);
+  c.closePath();
+}
+
+function vitral(t, T) {
+  ctx.drawImage(PRE.pedra, 0, 0);
+
+  // moldura de pedra lavrada em volta do arco
+  ctx.save();
+  caminhoArco(ctx, -26); ctx.fillStyle = '#2a221b'; ctx.fill();
+  caminhoArco(ctx, -12); ctx.fillStyle = '#3a3027'; ctx.fill();
+  ctx.restore();
+
+  // vidro
+  ctx.save();
+  caminhoArco(ctx, 0); ctx.clip();
+  ctx.fillStyle = '#111'; ctx.fillRect(0, 0, W, H);
+  for (const p of PRE.pecas) {
+    const k = p.var * luz(p.cx, p.cy, t) * (0.96 + 0.04 * Math.sin(t * 1.7 + p.fase));
+    poligono(ctx, p.poly);
+    ctx.fillStyle = rgb(p.cor, k);
+    ctx.fill();
+  }
+  ctx.globalCompositeOperation = 'overlay';
+  ctx.drawImage(PRE.tex, 0, 0);
+  ctx.globalCompositeOperation = 'source-over';
+  // chumbo
+  ctx.strokeStyle = '#141210'; ctx.lineWidth = 9; ctx.lineJoin = 'round';
+  for (const p of PRE.pecas) { poligono(ctx, p.poly); ctx.stroke(); }
+  ctx.strokeStyle = 'rgba(120,110,95,0.35)'; ctx.lineWidth = 2;
+  for (const p of PRE.pecas) { poligono(ctx, p.poly); ctx.stroke(); }
+
+  rosacea(t, T);
+
+  // brilho da luz passando (cor da luz do tema)
+  const L = T.luz;
+  const sx = 200 + 680 * (0.5 + 0.5 * Math.sin(t * 0.11 - 1.2));
+  const sy = 420 + 260 * Math.sin(t * 0.07);
+  const gl = ctx.createRadialGradient(sx, sy, 0, sx, sy, 520);
+  gl.addColorStop(0, `rgba(${L},0.22)`);
+  gl.addColorStop(1, `rgba(${L},0)`);
+  ctx.globalCompositeOperation = 'screen';
+  ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
+  ctx.restore();
+
+  // contorno de pedra do arco e mainéis (colunas) verticais
+  ctx.save();
+  caminhoArco(ctx, 0); ctx.lineWidth = 16; ctx.strokeStyle = '#4a3d30'; ctx.stroke();
+  ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(255,230,190,0.18)'; ctx.stroke();
+  ctx.restore();
+
+  // feixes de luz (raios divinos) atravessando a nave
+  ctx.save();
+  ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 6; i++) {
+    const x = 120 + i * 170 + Math.sin(t * 0.2 + i) * 30;
+    const a = 0.035 + 0.025 * Math.sin(t * 0.5 + i * 1.3);
+    const g = ctx.createLinearGradient(x, 0, x + 520, H);
+    g.addColorStop(0, `rgba(${L},${a})`);
+    g.addColorStop(1, `rgba(${L},0)`);
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.moveTo(x, 0); ctx.lineTo(x + 70, 0); ctx.lineTo(x + 640, H); ctx.lineTo(x + 470, H);
+    ctx.closePath(); ctx.fill();
+  }
+  // poeira dourada flutuando na luz
+  for (let i = 0; i < 70; i++) {
+    const y = ((rnd(i + 11) * H) - t * (6 + rnd(i) * 10) + H * 4) % H;
+    const x = rnd(i + 21) * W + Math.sin(t * 0.4 + i) * 25;
+    const a = 0.15 + 0.3 * (0.5 + 0.5 * Math.sin(t * 1.1 + i * 2));
+    ctx.fillStyle = `rgba(${L},${a})`;
+    ctx.beginPath(); ctx.arc(x, y, 1.2 + rnd(i + 31) * 2.2, 0, 6.283); ctx.fill();
+  }
+  ctx.restore();
+}
+
+function rosacea(t, T) {
+  const { x, y, r } = ROSA;
+  const cores = T.rosa.map(hex);
+  const giro = t * 0.02;
+  ctx.save();
+  ctx.translate(x, y);
+  // fundo e anel externo
+  ctx.beginPath(); ctx.arc(0, 0, r + 22, 0, 6.283); ctx.fillStyle = '#141210'; ctx.fill();
+  const N = 16;
+  for (let anel = 0; anel < 3; anel++) {
+    const r0 = r * [0.42, 0.66, 0.86][anel], r1 = r * [0.66, 0.86, 1.0][anel];
+    const n = anel === 0 ? 8 : N;
+    for (let i = 0; i < n; i++) {
+      const a0 = (i / n) * 6.283 + giro * (anel % 2 ? -1 : 1), a1 = ((i + 1) / n) * 6.283 + giro * (anel % 2 ? -1 : 1);
+      const am = (a0 + a1) / 2;
+      ctx.beginPath();
+      if (anel === 1) { // pétalas
+        ctx.moveTo(Math.cos(a0) * r0, Math.sin(a0) * r0);
+        ctx.quadraticCurveTo(Math.cos(am) * r1 * 1.08, Math.sin(am) * r1 * 1.08, Math.cos(a1) * r0, Math.sin(a1) * r0);
+      } else {
+        ctx.arc(0, 0, r1, a0, a1); ctx.arc(0, 0, r0, a1, a0, true);
+      }
+      ctx.closePath();
+      const c = cores[(i + anel) % cores.length];
+      const k = luz(x + Math.cos(am) * r0, y + Math.sin(am) * r0, t) * (0.92 + 0.08 * Math.sin(t + i));
+      ctx.fillStyle = rgb(c, k); ctx.fill();
+      ctx.lineWidth = 7; ctx.strokeStyle = '#141210'; ctx.stroke();
+    }
+  }
+  // medalhão central
+  const rc = r * 0.42;
+  ctx.beginPath(); ctx.arc(0, 0, rc, 0, 6.283);
+  const fundoMed = T.simbolo === 'lua' ? hex('#0c1f4f') : hex('#f3e2b0');
+  ctx.fillStyle = rgb(fundoMed, luz(x, y, t)); ctx.fill();
+  ctx.lineWidth = 9; ctx.strokeStyle = '#141210'; ctx.stroke();
+  simbolo(T, rc, t);
+  // anel de chumbo externo
+  ctx.beginPath(); ctx.arc(0, 0, r, 0, 6.283); ctx.lineWidth = 12; ctx.strokeStyle = '#141210'; ctx.stroke();
+  ctx.beginPath(); ctx.arc(0, 0, r + 16, 0, 6.283); ctx.lineWidth = 10; ctx.strokeStyle = '#4a3d30'; ctx.stroke();
+  ctx.restore();
+}
+
+function vidro(c, cor, k) { ctx.fillStyle = rgb(hex(cor), k); ctx.fill(); ctx.lineWidth = 6; ctx.strokeStyle = '#141210'; ctx.stroke(); }
+
+function simbolo(T, rc, t) {
+  const k = 1 + 0.08 * Math.sin(t * 0.8);
+  if (T.simbolo === 'sol') {
+    for (let i = 0; i < 12; i++) {
+      const a = (i / 12) * 6.283 + t * 0.03;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a - 0.14) * rc * 0.42, Math.sin(a - 0.14) * rc * 0.42);
+      ctx.lineTo(Math.cos(a) * rc * 0.9, Math.sin(a) * rc * 0.9);
+      ctx.lineTo(Math.cos(a + 0.14) * rc * 0.42, Math.sin(a + 0.14) * rc * 0.42);
+      ctx.closePath();
+      vidro(ctx, i % 2 ? '#e8b93a' : '#d97a1e', k);
+    }
+    ctx.beginPath(); ctx.arc(0, 0, rc * 0.42, 0, 6.283); vidro(ctx, '#f6d36b', k);
+    // cruz no centro do sol
+    ctx.beginPath(); ctx.rect(-8, -rc * 0.3, 16, rc * 0.6); ctx.rect(-rc * 0.2, -rc * 0.12, rc * 0.4, 16);
+    ctx.fillStyle = '#8e1b1b'; ctx.fill();
+  } else if (T.simbolo === 'coracao') {
+    // Sagrado Coração: coração, chamas e cruz
+    const s = rc * 0.66;
+    ctx.translate(0, rc * 0.22);
+    ctx.beginPath();
+    ctx.moveTo(0, s * 0.95);
+    ctx.bezierCurveTo(-s * 1.4, s * 0.1, -s * 0.9, -s * 1.0, 0, -s * 0.35);
+    ctx.bezierCurveTo(s * 0.9, -s * 1.0, s * 1.4, s * 0.1, 0, s * 0.95);
+    vidro(ctx, '#b02a3c', k);
+    for (let i = -1; i <= 1; i++) { // chamas
+      ctx.beginPath();
+      ctx.moveTo(i * s * 0.32 - s * 0.16, -s * 0.5);
+      ctx.quadraticCurveTo(i * s * 0.32 - s * 0.05, -s * 1.1 + Math.abs(i) * s * 0.2, i * s * 0.32 + s * 0.02 * Math.sin(t * 3 + i), -s * 1.35 + Math.abs(i) * s * 0.25);
+      ctx.quadraticCurveTo(i * s * 0.32 + s * 0.05, -s * 1.1 + Math.abs(i) * s * 0.2, i * s * 0.32 + s * 0.16, -s * 0.5);
+      ctx.closePath();
+      vidro(ctx, '#e8b93a', k);
+    }
+    ctx.beginPath(); ctx.rect(-9, -s * 1.85, 18, s * 0.6); ctx.rect(-s * 0.2, -s * 1.68, s * 0.4, 16);
+    ctx.fillStyle = '#e8b93a'; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = '#141210'; ctx.stroke();
+    // coroa de espinhos (faixa)
+    ctx.beginPath(); ctx.ellipse(0, s * 0.05, s * 0.75, s * 0.14, 0, 0, 6.283);
+    ctx.lineWidth = 10; ctx.strokeStyle = '#1e5c46'; ctx.stroke();
+  } else {
+    // Stella Maris: lua crescente e estrela
+    const fundoMed = rgb(hex('#0c1f4f'), luz(ROSA.x, ROSA.y, t));
+    const lx = -rc * 0.1, ly = rc * 0.08, lr = rc * 0.58;
+    const bx = rc * 0.16, by = -rc * 0.1, br = rc * 0.5;
+    ctx.beginPath(); ctx.arc(lx, ly, lr, 0, 6.283);
+    ctx.fillStyle = rgb(hex('#f1ead2'), k); ctx.fill();
+    ctx.lineWidth = 6; ctx.strokeStyle = '#141210'; ctx.stroke();
+    ctx.save();
+    ctx.beginPath(); ctx.arc(lx, ly, lr + 4, 0, 6.283); ctx.clip();
+    ctx.beginPath(); ctx.arc(bx, by, br, 0, 6.283);
+    ctx.fillStyle = fundoMed; ctx.fill(); ctx.stroke();
+    ctx.restore();
+    ctx.beginPath();
+    for (let i = 0; i < 10; i++) {
+      const a = -Math.PI / 2 + (i / 10) * 6.283, rr = i % 2 ? rc * 0.1 : rc * 0.26;
+      const px = rc * 0.42 + Math.cos(a) * rr, py = -rc * 0.4 + Math.sin(a) * rr;
+      i ? ctx.lineTo(px, py) : ctx.moveTo(px, py);
+    }
+    ctx.closePath(); vidro(ctx, '#c9a43a', k);
+  }
+}
+
+// ---------- texto ----------
+function placa(alfa) {
+  const { x, y, w, h } = PLACA;
+  ctx.save();
+  ctx.globalAlpha = alfa;
+  ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 40;
+  ctx.fillStyle = 'rgba(14,10,8,0.80)';
+  ctx.beginPath(); ctx.roundRect(x, y, w, h, 18); ctx.fill();
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = 'rgba(214,174,92,0.85)'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.roundRect(x + 12, y + 12, w - 24, h - 24, 12); ctx.stroke();
+  ctx.strokeStyle = 'rgba(214,174,92,0.35)'; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.roundRect(x + 22, y + 22, w - 44, h - 44, 8); ctx.stroke();
+  // pequenas cruzes nos cantos
+  [[x + 44, y + 44], [x + w - 44, y + 44], [x + 44, y + h - 44], [x + w - 44, y + h - 44]].forEach(([cx, cy]) => {
+    ctx.fillStyle = 'rgba(214,174,92,0.9)';
+    ctx.fillRect(cx - 2, cy - 10, 4, 20); ctx.fillRect(cx - 8, cy - 4, 16, 4);
+  });
+  ctx.restore();
+}
+
+function faixaTitulo(D, alfa) {
+  ctx.save();
+  ctx.globalAlpha = alfa;
+  ctx.font = '600 40px Cinzel, "Cormorant Garamond", serif';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const txt = D.titulo.toUpperCase();
+  const w = ctx.measureText(txt).width + 110, y = 985;
+  // faixa (filactério)
+  ctx.fillStyle = '#efe0b8';
+  ctx.beginPath();
+  ctx.moveTo(540 - w / 2 - 40, y - 34); ctx.lineTo(540 + w / 2 + 40, y - 34);
+  ctx.lineTo(540 + w / 2 + 12, y); ctx.lineTo(540 + w / 2 + 40, y + 34);
+  ctx.lineTo(540 - w / 2 - 40, y + 34); ctx.lineTo(540 - w / 2 - 12, y); ctx.closePath();
+  ctx.shadowColor = 'rgba(0,0,0,0.5)'; ctx.shadowBlur = 20; ctx.fill(); ctx.shadowBlur = 0;
+  ctx.lineWidth = 5; ctx.strokeStyle = '#141210'; ctx.stroke();
+  ctx.fillStyle = '#5a1414';
+  ctx.fillText(txt, 540, y + 3);
+  ctx.restore();
+}
+
+function quebrar(palavras, fonte, largura) {
+  ctx.font = fonte;
+  const linhas = []; let atual = [];
+  const espaco = ctx.measureText(' ').width;
+  let lw = 0;
+  palavras.forEach(p => {
+    const w = ctx.measureText(p.w).width;
+    if (atual.length && lw + espaco + w > largura) { linhas.push(atual); atual = []; lw = 0; }
+    lw += (atual.length ? espaco : 0) + w;
+    atual.push(p);
+  });
+  if (atual.length) linhas.push(atual);
+  return linhas;
+}
+
+function legenda(t, D, T) {
+  const i = D.frases.findIndex((f, j) => {
+    const prox = D.frases[j + 1];
+    return t >= f.start - 0.25 && t < (prox ? prox.start - 0.25 : D.amemStart);
+  });
+  if (i < 0) return;
+  const fr = D.frases[i];
+  const fim = D.frases[i + 1] ? D.frases[i + 1].start - 0.25 : D.amemStart;
+  const aIn = ease((t - (fr.start - 0.25)) / 0.45);
+  const aOut = ease((fim - t) / 0.35);
+  const alfa = Math.min(aIn, aOut);
+  const sobe = (1 - aIn) * 24;
+
+  const fonte = '600 76px "Cormorant Garamond", Caladea, serif';
+  const linhas = quebrar(fr.words, fonte, 720);
+  const lh = 96;
+  const yc = PLACA.y + PLACA.h / 2;
+  const y0 = yc - ((linhas.length - 1) * lh) / 2 + sobe;
+  ctx.font = fonte;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  const espaco = ctx.measureText(' ').width;
+  linhas.forEach((ln, k) => {
+    const total = ln.reduce((s, p, j) => s + ctx.measureText(p.w).width + (j ? espaco : 0), 0);
+    let x = (W - total) / 2;
+    const y = y0 + k * lh;
+    ln.forEach(p => {
+      const w = ctx.measureText(p.w).width;
+      const dita = t >= p.s;
+      const agora = t >= p.s && t < p.e + 0.08;
+      ctx.save();
+      ctx.globalAlpha = alfa * (dita ? 1 : 0.55);
+      if (agora) { ctx.shadowColor = T.destaque; ctx.shadowBlur = 24; }
+      ctx.fillStyle = agora ? T.destaque : '#f6eedb';
+      ctx.fillText(p.w, x, y);
+      ctx.restore();
+      x += w + espaco;
+    });
+  });
+}
+
+function render(t) {
+  const D = window.DATA, T = TEMAS[D.tema];
+  if (!PRE || PRE.tema !== T) preparar(T);
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 1;
+  ctx.shadowBlur = 0;
+  vitral(t, T);
+
+  const aUI = ease((t - 0.3) / 0.8) * ease((D.total - t) / 0.8);
+  faixaTitulo(D, aUI);
+  placa(aUI);
+  legenda(t, D, T);
+
+  if (t >= D.amemStart - 0.1) {
+    const yc = PLACA.y + PLACA.h / 2;
+    const a = ease((t - D.amemStart) / 0.6) * ease((D.total - t) / 0.6);
+    const esc = 0.92 + 0.08 * ease((t - D.amemStart) / 1.2);
+    ctx.save();
+    ctx.globalAlpha = a;
+    ctx.translate(W / 2, yc - 50); ctx.scale(esc, esc);
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.shadowColor = T.destaque; ctx.shadowBlur = 36;
+    ctx.fillStyle = '#f6e3a8';
+    ctx.font = 'italic 500 170px "Cormorant Garamond", Caladea, serif';
+    ctx.fillText('Amém', 0, 0);
+    ctx.restore();
+
+    const b = ease((t - D.amemStart - 0.9) / 0.6) * ease((D.total - t) / 0.6);
+    ctx.save();
+    ctx.globalAlpha = b;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillStyle = 'rgba(246,238,219,0.95)';
+    ctx.font = '600 44px "Cormorant Garamond", serif';
+    ctx.fillText('Escreva AMÉM nos comentários', W / 2, yc + 100);
+    ctx.fillStyle = 'rgba(246,238,219,0.7)';
+    ctx.font = '500 38px "Cormorant Garamond", serif';
+    ctx.fillText('e compartilhe com quem você ama', W / 2, yc + 152);
+    ctx.restore();
+  }
+
+  const f = Math.min(ease(t / 0.6), ease((D.total - t) / 0.5));
+  if (f < 1) { ctx.fillStyle = `rgba(0,0,0,${1 - f})`; ctx.fillRect(0, 0, W, H); }
+}
+
+window.render = render;
+window.frame = (t, q) => { render(t); return cv.toDataURL('image/jpeg', q || 0.92); };
+
+if (!window.MODO_RENDER && window.DATA) {
+  const t0 = performance.now();
+  const loop = () => { render(((performance.now() - t0) / 1000) % window.DATA.total); requestAnimationFrame(loop); };
+  document.fonts.ready.then(loop);
+}
+</script>
+</body>
+</html>
