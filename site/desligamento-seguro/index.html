@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desligamento Seguro · Prism</title>
+<meta name="description" content="Quando alguém sai da empresa, todos os acessos caem em minutos e a prova para a auditoria fica pronta.">
+<style>
+:root{--azul:#163259;--azul2:#2f6db5;--fundo:#f4f6fa;--cartao:#fff;--texto:#141a24;--suave:#5b6677;--borda:#d7dde8;--verm:#b00020;--verde:#0a7a3a}
+@media (prefers-color-scheme:dark){:root{--fundo:#0f141c;--cartao:#171e29;--texto:#e7ecf3;--suave:#9aa6b8;--borda:#2a3444;--verm:#ff7b8a;--verde:#5fd08f}}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--fundo);color:var(--texto)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{background:#163259;color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+.marca{font-weight:700}.marca span{color:#7fb2ff}
+.hero{background:#163259;color:#fff;padding:48px 0 64px}
+.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:0 0 16px;max-width:780px}
+.hero p{font-size:19px;opacity:.9;max-width:680px;margin:0 0 28px}
+.btn{display:inline-block;background:#2f6db5;color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:8px;border:0;font-size:17px;cursor:pointer}
+.btn.sec{background:transparent;border:1px solid #ffffff80;margin-left:8px}
+section{padding:56px 0}h2{font-size:clamp(24px,3.5vw,32px);margin:0 0 20px}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.c{background:var(--cartao);border:1px solid var(--borda);border-radius:12px;padding:20px}
+.c h3{margin:0 0 8px;font-size:18px}.c p{margin:0;color:var(--suave);font-size:15px}
+.dor{border-left:4px solid var(--verm)}
+.passos{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.passos li{counter-increment:p;background:var(--cartao);border:1px solid var(--borda);border-radius:12px;padding:16px 16px 16px 60px;position:relative}
+.passos li::before{content:counter(p);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:#2f6db5;color:#fff;font-weight:700;display:grid;place-items:center}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.calc{grid-template-columns:1fr}.btn.sec{margin:10px 0 0}}
+label{display:block;font-size:14px;color:var(--suave);margin:12px 0 4px}
+input{width:100%;padding:10px;border:1px solid var(--borda);border-radius:8px;font:inherit;background:var(--cartao);color:var(--texto)}
+.res b{display:block;font-size:34px;color:var(--verde);line-height:1.2}.res .linha{display:flex;justify-content:space-between;border-bottom:1px solid var(--borda);padding:8px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;background:var(--cartao);border-radius:12px;overflow:hidden}
+th,td{padding:12px;border-bottom:1px solid var(--borda);text-align:left;vertical-align:top;font-size:15px}th{background:var(--fundo)}
+.tabela{overflow-x:auto}
+.preco b{font-size:28px;display:block}.preco small{color:var(--suave)}
+.faq details{background:var(--cartao);border:1px solid var(--borda);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.faq summary{font-weight:600;cursor:pointer}
+footer{padding:32px 0;color:var(--suave);font-size:14px}
+.cta-final{background:#163259;color:#fff;text-align:center}
+.cta-final p{opacity:.9}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="marca"><span>◆</span> Desligamento Seguro <small style="font-weight:400;opacity:.75">by Prism</small></div>
+<a class="btn" href="#contato">Ver demonstração</a></div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Saiu da empresa? Todos os acessos caem em minutos.</h1>
+<p>E-mail, Microsoft 365, Slack, CRM e outros sistemas bloqueados com um clique, com a prova pronta para a auditoria.
+Para empresas de 50 a 500 pessoas que não podem ter ex-funcionário com acesso.</p>
+<a class="btn" href="#contato">Quero ver em 15 minutos</a><a class="btn sec" href="#calculadora">Calcular economia</a>
+</div></div>
+
+<section><div class="wrap">
+<h2>O desligamento manual sempre deixa algo para trás</h2>
+<div class="grade">
+<div class="c dor"><h3>Acesso esquecido</h3><p>O e-mail foi bloqueado no dia. O CRM, o Slack e a senha compartilhada, não. Semanas depois alguém descobre.</p></div>
+<div class="c dor"><h3>Prova que não existe</h3><p>O auditor pede 10 desligamentos do semestre e quando cada acesso caiu. A equipe passa dias juntando prints.</p></div>
+<div class="c dor"><h3>Contas sem dono</h3><p>Usuário "temp", freelancer antigo, conta de teste com poder de administrador. Ninguém sabe de quem é.</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Como funciona</h2>
+<ol class="passos">
+<li><b>Conecta</b> Google Workspace, Microsoft 365, Slack e sistemas com SCIM, com permissões mínimas.</li>
+<li><b>Mostra o mapa</b>: quem tem acesso a quê, ex-funcionários ainda ativos e contas sem dono, já no primeiro dia.</li>
+<li><b>O RH avisa</b> com um botão, ou o sistema de folha avisa sozinho. Dá para agendar: "sexta às 18h".</li>
+<li><b>Tudo cai em minutos</b>: sessões encerradas, contas suspensas, arquivos transferidos ao gestor. Se um sistema estiver instável, tenta de novo sozinho.</li>
+<li><b>Checklist</b> de notebook, crachá e senhas compartilhadas, com nome e horário de quem confirmou.</li>
+<li><b>Comprovante para auditoria</b> por desligamento e relatório do período, com registro que não pode ser alterado.</li>
+</ol>
+</div></section>
+
+<section id="calculadora" style="background:var(--cartao);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)"><div class="wrap">
+<h2>Quanto o desligamento manual custa para você</h2>
+<div class="calc">
+<div>
+<label for="d">Desligamentos por mês</label><input id="d" type="number" min="0" value="5">
+<label for="h">Horas gastas por desligamento (TI + RH)</label><input id="h" type="number" min="0" step="0.5" value="2.5">
+<label for="v">Custo da hora da equipe (R$)</label><input id="v" type="number" min="0" value="90">
+<label for="a">Dias para preparar a evidência de cada auditoria</label><input id="a" type="number" min="0" value="5">
+<label for="n">Auditorias por ano</label><input id="n" type="number" min="0" value="1">
+<label for="l">Licenças pagas de ex-funcionários esquecidas</label><input id="l" type="number" min="0" value="4">
+<label for="p">Preço médio da licença por mês (R$)</label><input id="p" type="number" min="0" value="60">
+</div>
+<div class="c res">
+<span>Economia estimada por ano</span><b id="total">—</b>
+<div class="linha"><span>Horas de desligamento</span><span id="r1"></span></div>
+<div class="linha"><span>Preparação de auditoria</span><span id="r2"></span></div>
+<div class="linha"><span>Licenças esquecidas</span><span id="r3"></span></div>
+<div class="linha"><span>Plano Essencial (anual)</span><span>R$ 11.880</span></div>
+<p style="margin-top:12px;color:var(--suave);font-size:14px">Estimativa com os números que você informou. Não inclui o risco evitado:
+acesso indevido, vazamento e multa da LGPD (até 2% do faturamento, limitada a R$ 50 milhões por infração).</p>
+</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Feito para quem precisa provar</h2>
+<div class="tabela"><table>
+<tr><th>Quem</th><th>O que pede</th><th>O que o Desligamento Seguro entrega</th></tr>
+<tr><td>Fintechs e instituições reguladas pelo Banco Central</td><td>Controle de acesso na política de segurança cibernética (Res. CMN 4.893 e alterações)</td><td>Retirada imediata e registro de cada acesso, relatório do período</td></tr>
+<tr><td>Empresas em ISO 27001 / SOC 2</td><td>Direitos de acesso, responsabilidades após o desligamento, devolução de ativos</td><td>Comprovante por desligamento, checklist de ativos, trilha íntegra</td></tr>
+<tr><td>Call centers e BPOs</td><td>Muitos desligamentos por mês, sem erro</td><td>Um clique ou aviso automático da folha, agendamento</td></tr>
+<tr><td>Escritórios de advocacia e contabilidade</td><td>Sigilo de clientes e questionário de segurança de clientes grandes</td><td>Mapa de acessos e evidência pronta para responder</td></tr>
+</table></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Segurança levada a sério</h2>
+<div class="grade">
+<div class="c"><h3>Permissões mínimas</h3><p>Só listar, suspender, encerrar sessões e transferir arquivos. Não lemos e-mails nem documentos.</p></div>
+<div class="c"><h3>Credenciais cifradas</h3><p>AES-256-GCM, chave fora do banco, nunca exibidas de novo.</p></div>
+<div class="c"><h3>MFA obrigatório</h3><p>Todo usuário entra com senha e código do aplicativo autenticador.</p></div>
+<div class="c"><h3>Dados no Brasil</h3><p>Hospedagem na região São Paulo e contrato com cláusulas da LGPD.</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Planos</h2>
+<div class="grade">
+<div class="c preco"><h3>Essencial</h3><b>R$ 990<small>/mês</small></b><p>Até 100 colaboradores e 5 sistemas. Contrato anual.</p></div>
+<div class="c preco"><h3>Profissional</h3><b>R$ 1.990<small>/mês</small></b><p>Até 300 colaboradores, sistemas ilimitados, aviso automático da folha. Contrato anual.</p></div>
+<div class="c preco"><h3>Corporativo</h3><b>Sob consulta</b><p>Acima de 300 pessoas, instância dedicada, sistemas próprios.</p></div>
+</div>
+<p style="color:var(--suave);font-size:15px">Implantação de R$ 3 mil a R$ 8 mil. Piloto de 30 dias por R$ 2.500, abatido da implantação se você seguir.</p>
+</div></section>
+
+<section class="faq" style="padding-top:0"><div class="wrap">
+<h2>Perguntas frequentes</h2>
+<details><summary>Já temos Okta, Entra ID ou JumpCloud. Precisa?</summary><p>O SSO cobre o que está conectado nele. O Desligamento Seguro cobre também o que fica fora, o checklist de equipamentos e senhas compartilhadas e o comprovante por desligamento para a auditoria.</p></details>
+<details><summary>É seguro dar acesso de administrador para vocês?</summary><p>Pedimos só as permissões necessárias (guia entregue antes da conexão), a credencial fica cifrada, o MFA é obrigatório e cada ação fica registrada numa trilha que nem nós conseguimos alterar.</p></details>
+<details><summary>E o Slack?</summary><p>A automação usa a API SCIM do Slack, disponível nos planos Business+ e Enterprise Grid. Nos outros planos, o Slack entra no checklist para alguém confirmar.</p></details>
+<details><summary>Quanto tempo leva para começar?</summary><p>Em geral, uma semana: conexão dos sistemas, importação da lista de colaboradores e treinamento.</p></details>
+<details><summary>Vocês têm certificação ISO 27001?</summary><p>Ainda não. Respondemos o seu questionário de segurança de fornecedor com o que já existe e o que está planejado, sem enrolação.</p></details>
+</div></section>
+
+<section class="cta-final" id="contato"><div class="wrap">
+<h2>Veja os riscos da sua empresa em 15 minutos</h2>
+<p>Demonstração com dados fictícios, sem conectar nada real. Se fizer sentido, um piloto de 30 dias com os seus sistemas.</p>
+<a class="btn" id="wa" href="#">Chamar no WhatsApp</a>
+<a class="btn sec" id="mail" href="#">Mandar e-mail</a>
+</div></section>
+
+<footer><div class="wrap">Desligamento Seguro é um produto da Prism.</div></footer>
+
+<script>
+// Preencha antes de publicar:
+const WHATSAPP = "[WHATSAPP]";       // só números com DDI, ex.: 5534999999999
+const EMAIL = "[E-MAIL]";
+const msg = encodeURIComponent("Olá! Quero ver a demonstração do Desligamento Seguro.");
+document.getElementById("wa").href = `https://wa.me/${WHATSAPP}?text=${msg}`;
+document.getElementById("mail").href = `mailto:${EMAIL}?subject=${encodeURIComponent("Demonstração do Desligamento Seguro")}`;
+
+const brl = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+const num = (id) => Math.max(0, parseFloat(document.getElementById(id).value) || 0);
+function calcular() {
+  const horas = num("d") * 12 * Math.max(0, num("h") - 0.3) * num("v");   // ~0,3 h restam para revisar e confirmar
+  const auditoria = num("a") * 8 * num("v") * num("n") * 0.8;
+  const licencas = num("l") * num("p") * 12;
+  document.getElementById("r1").textContent = brl(horas);
+  document.getElementById("r2").textContent = brl(auditoria);
+  document.getElementById("r3").textContent = brl(licencas);
+  document.getElementById("total").textContent = brl(horas + auditoria + licencas);
+}
+document.querySelectorAll(".calc input").forEach((i) => i.addEventListener("input", calcular));
+calcular();
+</script>
+</body>
+</html>

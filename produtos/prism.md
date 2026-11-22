@@ -14,9 +14,11 @@ escritórios de contabilidade e prefeituras.
 ## Produtos (portfólio atual)
 - **NFS-e Fácil**: emissão de nota de serviço no Padrão Nacional em 3 passos (ver `nfse-facil.md`).
 - **Abastece Fácil**: controle do convênio de combustível entre prefeitura e postos, com foto e alertas (ver `abastece.md`).
+- **Desligamento Seguro**: quando alguém sai da empresa, retira todos os acessos em minutos e gera a prova para a auditoria (ver `desligamento-seguro.md`).
 
 ## Para quem
-Pequenas empresas e MEIs de serviço · escritórios de contabilidade · prefeituras · postos de combustível conveniados.
+Pequenas empresas e MEIs de serviço · escritórios de contabilidade · prefeituras · postos de combustível conveniados ·
+empresas médias (50 a 500 pessoas) com dado sensível: fintechs, call centers, escritórios, empresas em ISO 27001.
 
 ## Tom de voz
 Direto, próximo e competente. Fala como gente, não como manual. Sem "solução inovadora disruptiva".
