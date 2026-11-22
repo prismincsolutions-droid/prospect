@@ -14,7 +14,12 @@ Abra este repositório no Claude Code e peça, por exemplo:
 
 ## Agente de prospecção
 Encontra e qualifica leads em fontes públicas, registra em `leads/pipeline.csv` (com a fonte de cada dado),
-escreve a primeira mensagem de cada lead e revisa o funil. Ele prepara; quem envia é você.
+escreve a primeira mensagem de cada lead, gera um **relatório HTML** em `saidas/` e revisa o funil.
+Ele prepara; quem envia é você. Modos: `rapido` (5 leads), `padrao` (10), `profundo` (20), `piloto`.
+
+A pontuação (dor, encaixe, momento, alcance, evidência) e o gerador do relatório vêm da skill
+[first-customer-finder](https://github.com/RAAAAAGEEEEE/claude-first-customer-finder-skill), de Francesco Mistero
+(Kappaemme), licença MIT, copiada em `.claude/skills/first-customer-finder/`. Precisa de Python 3 instalado.
 
 - `@prospeccao 10 escritórios de contabilidade em Uberlândia para o NFS-e Fácil`
 - `@prospeccao prefeituras do Vale do Aço com contrato de combustível vencendo nos próximos 6 meses (Abastece Fácil)`
@@ -26,6 +31,7 @@ escreve a primeira mensagem de cada lead e revisa o funil. Ele prepara; quem env
 | Caminho | Para quê |
 |---|---|
 | `.claude/agents/prospeccao.md` | Instruções do agente de prospecção (ICP, fontes, pontuação, funil, LGPD) |
+| `.claude/skills/first-customer-finder/` | Skill MIT de pesquisa de primeiros clientes (framework + gerador do relatório) |
 | `leads/pipeline.csv` | Funil de leads (abre no Excel/Google Planilhas) |
 | `leads/nao-contatar.csv` | Quem pediu para não ser contatado: o agente nunca aborda |
 | `.claude/agents/vendas.md` | Instruções do agente (tom, regras de copy, LGPD, venda ao setor público, formatos) |
